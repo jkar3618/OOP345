@@ -1,0 +1,17 @@
+﻿  FoodOrder.cpp
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(73,27): warning C4305: 'argument': truncation from 'int' to '_Elem'
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(73,27): warning C4305:         with
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(73,27): warning C4305:         [
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(73,27): warning C4305:             _Elem=char
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(73,27): warning C4305:         ]
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(73,27): warning C4309: 'argument': truncation of constant value
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(75,27): warning C4305: 'argument': truncation from 'int' to '_Elem'
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(75,27): warning C4305:         with
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(75,27): warning C4305:         [
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(75,27): warning C4305:             _Elem=char
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(75,27): warning C4305:         ]
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(75,27): warning C4309: 'argument': truncation of constant value
+C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\Week 1 - Across Translation Units\FoodOrder.cpp(146,23): warning C4806: '==': unsafe operation: no value of type 'const bool' promoted to type 'char' can equal the given constant
+  tester_1.cpp
+  Generating Code...
+  Week 1 - Across Translation Units.vcxproj -> C:\Users\jkar3\OneDrive\바탕 화면\Coding\Seneca\5th Semester\OOP 345\OOP345 Exercise 1\x64\Debug\Week 1 - Across Translation Units.exe

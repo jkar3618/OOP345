@@ -1,0 +1,4 @@
+#ifndef SENECA_TIMEDTASK_H
+#define SENECA_TIMEDTASK_H
+
+#endif // !SENECA_TIMEDTASK_H
