@@ -8,8 +8,8 @@ namespace seneca
 {
 	class FoodOrder
 	{
-		char f_name[20]{};
-		char f_desc[20]{};
+		char f_name[16]{};
+		char f_desc[26]{};
 		double f_price{};
 		bool f_special{};
 

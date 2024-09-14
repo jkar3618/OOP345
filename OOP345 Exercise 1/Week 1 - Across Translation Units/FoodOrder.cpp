@@ -51,13 +51,11 @@ namespace seneca
 		// TODO: insert return statement here
 		if (is)
 		{
-			char daily = 0;
+			char daily;
 
 			f_special = false;
-
-			is.getline(f_name, 11, ', ');
-			is.ignore();
-			is.getline(f_desc, 26, ', ');
+			is.getline(f_name, 10, ',');
+			is.getline(f_desc, 25, ',');
 			is >> f_price;
 			is.ignore();
 			is.get(daily);
@@ -72,32 +70,6 @@ namespace seneca
 		// TODO: insert return statement here
 		return is;
 	}
-
-	// istream& FoodOrder::read(std::istream& is)
-	//{
-	//	if (is)
-	//	{
-	//		char daily = 0;
-
-	//		f_special = false;
-
-	//		is.getline(f_name, 999, ', ');
-	//		is.ignore();
-	//		is.getline(f_desc, 999, ', ');
-	//		is >> f_price;
-	//		is.ignore();
-	//		is.get(daily);
-	//		is.ignore(1000, '\n');
-
-	//		if (daily == 'Y')
-	//		{
-	//			f_special = true;
-	//		}
-
-	//	}
-	//	// TODO: insert return statement here
-	//	return is;
-	//}
 
 	void FoodOrder::display() const
 	{
