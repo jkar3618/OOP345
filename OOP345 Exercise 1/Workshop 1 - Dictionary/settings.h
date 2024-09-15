@@ -3,7 +3,10 @@
 
 namespace seneca
 {
-
+	class Setting
+	{
+		Setting();
+	};
 }
 
 #endif

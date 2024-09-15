@@ -3,6 +3,10 @@
 
 namespace seneca
 {
+	class Logger
+	{
+		Logger();
+	};
 
 }
 

@@ -3,7 +3,10 @@
 
 namespace seneca
 {
-
+	class Event
+	{
+		Event();
+	};
 }
 
 #endif
