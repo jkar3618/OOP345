@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 2 - Move and Copy Sema
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 1 - Across Translation Units", "Week 1 - Across Translation Units\Week 1 - Across Translation Units.vcxproj", "{E5F691BC-9DC9-4419-9173-6BA32791131E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Workshop 1 - Dictionary", "Workshop 1 - Dictionary\Workshop 1 - Dictionary.vcxproj", "{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{E5F691BC-9DC9-4419-9173-6BA32791131E}.Release|x64.Build.0 = Release|x64
 		{E5F691BC-9DC9-4419-9173-6BA32791131E}.Release|x86.ActiveCfg = Release|Win32
 		{E5F691BC-9DC9-4419-9173-6BA32791131E}.Release|x86.Build.0 = Release|Win32
+		{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}.Debug|x64.ActiveCfg = Debug|x64
+		{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}.Debug|x64.Build.0 = Debug|x64
+		{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}.Debug|x86.ActiveCfg = Debug|Win32
+		{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}.Debug|x86.Build.0 = Debug|Win32
+		{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}.Release|x64.ActiveCfg = Release|x64
+		{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}.Release|x64.Build.0 = Release|x64
+		{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}.Release|x86.ActiveCfg = Release|Win32
+		{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
