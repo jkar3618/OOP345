@@ -12,20 +12,24 @@ namespace seneca
 		size_t p_numProtein{ 0u };
 
 	public:
-		ProteinDatabase();
-		~ProteinDatabase();
-		ProteinDatabase(ProteinDatabase& src);
-		ProteinDatabase(ProteinDatabase&& src) noexcept;
-
-		ProteinDatabase& operator=(ProteinDatabase& src);
-		ProteinDatabase& operator=(ProteinDatabase&& src) noexcept;
+		ProteinDatabase(); // default constructor
+		ProteinDatabase(const std::string& fname); // 1 argument constructor
+		
+		// rule of 5
+		~ProteinDatabase(); // destructor
+		ProteinDatabase(const ProteinDatabase& src); // copy constructor
+		ProteinDatabase& operator=(const ProteinDatabase& src); // copy assignment
+		ProteinDatabase(ProteinDatabase&& src) noexcept; // move constructor
+		ProteinDatabase& operator=(ProteinDatabase&& src) noexcept; // move assignment
 
 		size_t size() const;
-		std::string operator[](size_t) const;
-		std::string getUID(size_t);
+		std::string operator[](size_t index) const;
+		std::string getUID(size_t index) const;
 
 	};
 }
 
 
 #endif // !SENECA_PROTEINDATABASE_H
+
+

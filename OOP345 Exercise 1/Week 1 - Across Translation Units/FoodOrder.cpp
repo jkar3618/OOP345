@@ -74,25 +74,28 @@ namespace seneca
 	void FoodOrder::display() const
 	{
 		static int COUNTER = 1;
-	
-		
 
-		cout.fill(' '); cout.width(2);
-		cout << COUNTER++; cout << ". ";
+		cout.fill(' ');
+		cout.width(2);
+		cout << COUNTER++ << ". ";
 
-		cout.fill(' '); cout.width(10);
-		cout << f_name; cout << "| ";
+		cout.fill(' ');
+		cout.width(10); // f_name의 너비 조정
+		cout << f_name << " | ";
 
-		cout.fill(' '); cout.width(15);
-		cout << f_desc; cout << "| ";
+		cout.fill(' ');
+		cout.width(25); // f_desc의 너비 조정
+		cout << f_desc << " | ";
 
-		cout.fill(' '); cout.width(12);
-		cout << (f_price * (1 + g_taxrate)); cout << "| ";
+		cout.fill(' ');
+		cout.width(12);
+		cout << fixed << setprecision(2) << (f_price * (1 + g_taxrate)) << " | ";
 
 		if (f_special)
 		{
-			cout.fill(' '); cout.width(12);
-			cout << (f_price * (1 + g_taxrate) * (1 - g_dailydiscount));
+			cout.fill(' ');
+			cout.width(12);
+			cout << fixed << setprecision(2) << (f_price * (1 + g_taxrate) * (1 - g_dailydiscount)); // 할인 적용
 		}
 
 		cout << endl;

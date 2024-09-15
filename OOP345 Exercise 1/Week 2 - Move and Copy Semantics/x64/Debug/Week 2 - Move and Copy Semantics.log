@@ -1,9 +1,4 @@
-﻿  ProteinDatabase.cpp
+﻿  TimedTask.cpp
   tester_1.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise 1\Week 2 - Move and Copy Semantics\tester_1.cpp(92,46): error C2665: 'seneca::ProteinDatabase::ProteinDatabase': none of the 4 overloads could convert all the argument types
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise 1\Week 2 - Move and Copy Semantics\ProteinDatabase.h(19,3): message : could be 'seneca::ProteinDatabase::ProteinDatabase(seneca::ProteinDatabase &&) noexcept'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise 1\Week 2 - Move and Copy Semantics\ProteinDatabase.h(18,3): message : or       'seneca::ProteinDatabase::ProteinDatabase(seneca::ProteinDatabase &)'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise 1\Week 2 - Move and Copy Semantics\tester_1.cpp(92,38): message : 'seneca::ProteinDatabase::ProteinDatabase(seneca::ProteinDatabase &)': cannot convert argument 1 from 'char *' to 'seneca::ProteinDatabase &'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise 1\Week 2 - Move and Copy Semantics\ProteinDatabase.h(18,3): message : see declaration of 'seneca::ProteinDatabase::ProteinDatabase'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise 1\Week 2 - Move and Copy Semantics\tester_1.cpp(92,46): message : while trying to match the argument list '(char *)'
   Generating Code...
+  Week 2 - Move and Copy Semantics.vcxproj -> C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise 1\x64\Debug\Week 2 - Move and Copy Semantics.exe
