@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <iomanip>
 #include "TimedTask.h"
 
@@ -6,6 +7,54 @@ using namespace std;
 
 namespace seneca
 {
+	
+	//TimedTask::TimedTask() : count(0) {}
+
+	//void TimedTask::startTime()
+	//{
+	//	t_startTime = std::chrono::steady_clock::now();
+	//}
+
+	//void TimedTask::stopClock()
+	//{
+	//}
+
+	//void TimedTask::addTask(const char* taskName)
+	//{
+	//}
+
+	//std::ostream& operator<<(std::ostream& os, const TimedTask& src)
+	//{
+
+	//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	// deault constructor
 	TimedTask::TimedTask() : numRecords(0u), t_startTime{}, t_endTime{}
 	{ }
@@ -49,6 +98,8 @@ namespace seneca
 		}
 
 		cout << "--------------------------" << endl;
+
+
 
 		return os;
 	}

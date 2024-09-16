@@ -141,6 +141,13 @@
     <ClInclude Include="settings.h" />
     <ClInclude Include="timeMonitor.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="english_large.csv" />
+    <None Include="english_small.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="sample_output.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

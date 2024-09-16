@@ -3,10 +3,14 @@
 
 namespace seneca
 {
-	class Setting
+	struct Settings
 	{
-		Setting();
+		bool m_show_all{ false };
+		bool m_verbose{ false };
+		std::string m_time_units = "nanoseconds";
 	};
+
+	extern Settings g_settings;
 }
 
 #endif

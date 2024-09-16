@@ -1,8 +1,6 @@
 #ifndef SENECA_PROTEINDATABASE_H
 #define SENECA_PROTEINDATABASE_H
 
-#include <string>
-
 namespace seneca
 {
 	class ProteinDatabase
@@ -14,6 +12,7 @@ namespace seneca
 	public:
 		ProteinDatabase(); // default constructor
 		ProteinDatabase(const std::string& fname); // 1 argument constructor
+		//ProteinDatabase(const char* fname);
 		
 		// rule of 5
 		~ProteinDatabase(); // destructor
