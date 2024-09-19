@@ -46,7 +46,7 @@ namespace seneca
                 m_words[m_size].definition = strDef;
 
                 m_words[m_size].pos = parsePos(strPos);
-                parsePos2(strPos, m_words[m_size].pos);
+                //parsePos2(strPos, m_words[m_size].pos);
 
                 m_size++;
 

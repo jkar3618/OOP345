@@ -18,6 +18,8 @@ namespace seneca
 	{
 		std::string m_eventName{};
 		std::chrono::nanoseconds m_duration{};
+		std::string e_eventName {};
+		std::chrono::nanoseconds e_duration{};
 
 	public:
 		Event();

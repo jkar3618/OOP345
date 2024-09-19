@@ -8,7 +8,7 @@ using namespace std;
 
 namespace seneca
 {
-	Event::Event() : m_eventName{ nullptr }, m_duration{  }
+	Event::Event() : e_eventName{nullptr}, e_duration{0}
 	{
 	}
 
@@ -44,6 +44,18 @@ namespace seneca
 		}
 
 
+
+
+
+
+		cout.fill(' ');
+		cout.width(2);
+		cout << COUNTER++ << ": ";
+		cout << " -> ";
+
+		cout.fill(' ');
+		cout.width(40);
+		cout << ro.e_eventName;
 
 
 
