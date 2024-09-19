@@ -16,7 +16,7 @@ namespace seneca
 		Logger(const Logger& src) = delete;
 		Logger& operator=(const Logger& src) = delete;
 
-		Logger(const Logger&& src) noexcept;
+		Logger(Logger&& src) noexcept;
 		Logger& operator=(Logger&& src) noexcept;
 
 		~Logger();

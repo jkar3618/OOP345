@@ -8,8 +8,9 @@ namespace seneca
 	Logger::Logger()
 	{
 	}
-	Logger::Logger(const Logger&& src) noexcept
+	Logger::Logger(Logger&& src) noexcept
 	{
+		//*this = move(src);
 		operator=(std::move(src));
 	}
 	Logger& Logger::operator=(Logger&& src) noexcept
