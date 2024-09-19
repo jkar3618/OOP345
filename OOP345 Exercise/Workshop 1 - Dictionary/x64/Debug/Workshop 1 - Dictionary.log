@@ -1,0 +1,7 @@
+﻿  event.cpp
+  logger.cpp
+  settings.cpp
+  tester_1.cpp
+  timeMonitor.cpp
+  Generating Code...
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 1 - Dictionary\logger.cpp(17): error C4716: 'seneca::Logger::operator=': must return a value

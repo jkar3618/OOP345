@@ -4,15 +4,25 @@
 
 namespace seneca
 {
+	enum TimeUnits
+	{
+		Seconds = 2,
+		Milliseconds = 5,
+		Microseconds = 8,
+		Nanoseconds = 11
+	};
+
+	TimeUnits tUnit = TimeUnits::Nanoseconds;
+
 	class Event
 	{
-		std::string eventName;
-		std::chrono::nanoseconds duration;
+		std::string m_eventName{};
+		std::chrono::nanoseconds m_duration{};
 
 	public:
 		Event();
 		Event(const char* name, const std::chrono::nanoseconds& duration);
-		friend std::ostream operator<<(std::ostream& os, const Event& ro);
+		friend std::ostream& operator<<(std::ostream& os, const Event& ro);
 	};
 }
 

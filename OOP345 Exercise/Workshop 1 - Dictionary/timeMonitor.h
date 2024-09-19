@@ -7,8 +7,8 @@ namespace seneca
 {
 	class TimeMonitor
 	{
-		std::chrono::steady_clock::time_point t_startTime;
-		std::chrono::steady_clock::time_point t_endTime;
+		std::chrono::steady_clock::time_point m_startTime;
+		std::chrono::steady_clock::time_point m_endTime;
 		const char* m_eventName{ nullptr };
 
 	public:

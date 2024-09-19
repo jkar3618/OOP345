@@ -6,9 +6,8 @@ namespace seneca
 {
 	class Logger
 	{
-		Event* m_events = nullptr;
-		size_t m_size;
-		size_t m_capacity{};
+		Event* m_events{ nullptr };
+		size_t m_size {0};
 
 	public:
 		Logger();
@@ -23,10 +22,10 @@ namespace seneca
 		~Logger();
 
 		void addEvent(const Event& event);
-		friend std::ostream operator<<(std::ostream& os, const Logger& ro);
-
+		std::ostream& display(std::ostream& os) const;
 
 	};
+	std::ostream& operator<<(std::ostream& os, const Logger& ro);
 
 }
 
