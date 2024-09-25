@@ -1,6 +1,8 @@
 #ifndef SENECA_DICTIONARY_H
 #define SENECA_DICTIONARY_H
 
+#include <string>
+
 namespace seneca
 {
 
@@ -41,7 +43,8 @@ namespace seneca
 		~Dictionary();
 
 		void searchWord(const char* word);
-		PartOfSpeech parsePos(const string& strPos);
+		PartOfSpeech& parsePos(const std::string& strPos);
+
 		// void parsePos2(const string& strPos, PartOfSpeech& pos);
 	};
 }

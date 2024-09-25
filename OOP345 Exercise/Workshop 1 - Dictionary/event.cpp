@@ -8,7 +8,10 @@ using namespace std;
 
 namespace seneca
 {
-	Event::Event() : e_eventName{nullptr}, e_duration{0}
+
+	TimeUnits tUnit = TimeUnits::Nanoseconds;
+
+	Event::Event() : m_eventName{""}, m_duration{0}
 	{
 	}
 
@@ -25,39 +28,29 @@ namespace seneca
 		cout.fill(' ');
 		cout.width(40);
 		cout << ro.m_eventName;
-		
+
 		cout << " -> ";
 
-		cout << setw(tUnit);
+		//cout << setw(tUnit);
 
-		if (g_settings.m_time_units == "microseconds") 
+		if (g_settings.m_time_units == "microseconds")
 		{
-			cout << std::chrono::duration_cast<std::chrono::microseconds>(ro.m_duration).count();
+			cout <<setw(TimeUnits::Microseconds) << std::chrono::duration_cast<std::chrono::microseconds>(ro.m_duration).count();
 		}
-		else if (g_settings.m_time_units == "milliseconds") 
+		else if (g_settings.m_time_units == "milliseconds")
 		{
-			cout << std::chrono::duration_cast<std::chrono::milliseconds>(ro.m_duration).count();
+			cout << setw(TimeUnits::Milliseconds) << std::chrono::duration_cast<std::chrono::milliseconds>(ro.m_duration).count();
 		}
-		else if (g_settings.m_time_units == "seconds") 
+		else if (g_settings.m_time_units == "seconds")
 		{
-			cout << std::chrono::duration_cast<std::chrono::seconds>(ro.m_duration).count();
+			cout << setw(TimeUnits::Seconds) << std::chrono::duration_cast<std::chrono::seconds>(ro.m_duration).count();
+		}
+		else 
+		{
+			cout << setw(TimeUnits::Nanoseconds) << std::chrono::duration_cast<std::chrono::nanoseconds>(ro.m_duration).count();
 		}
 
-
-
-
-
-
-		cout.fill(' ');
-		cout.width(2);
-		cout << COUNTER++ << ": ";
-		cout << " -> ";
-
-		cout.fill(' ');
-		cout.width(40);
-		cout << ro.e_eventName;
-
-
+		cout << ' ' << g_settings.m_time_units;
 
 		return os;
 	}
