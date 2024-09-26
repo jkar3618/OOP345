@@ -43,9 +43,8 @@ namespace seneca
 		~Dictionary();
 
 		void searchWord(const char* word);
-		PartOfSpeech& parsePos(const std::string& strPos);
+		PartOfSpeech parsePos(const std::string& strPos);
 
-		// void parsePos2(const string& strPos, PartOfSpeech& pos);
 	};
 }
 

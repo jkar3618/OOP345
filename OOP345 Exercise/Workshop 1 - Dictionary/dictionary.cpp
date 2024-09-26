@@ -1,7 +1,9 @@
 #include <iostream>
 #include <fstream>
-#include <iomanip>
 #include <sstream>
+#include <iomanip>
+#include <cstring>
+#include <string>
 #include "settings.h"
 #include "dictionary.h"
 
@@ -9,11 +11,12 @@ using namespace std;
 
 namespace seneca
 {
-	Dictionary::Dictionary()
+	Dictionary::Dictionary() : m_words(nullptr), m_size(0)
 	{
 	}
 
-	Dictionary::Dictionary(const char* filename)
+
+	Dictionary::Dictionary(const char* filename) : m_words(nullptr), m_size(0)
 	{
 		ifstream file(filename);
 
@@ -47,7 +50,6 @@ namespace seneca
 				m_words[m_size].definition = strDef;
 
 				m_words[m_size].pos = parsePos(strPos);
-				//parsePos2(strPos, m_words[m_size].pos);
 
 				m_size++;
 
@@ -58,20 +60,40 @@ namespace seneca
 
 	Dictionary::Dictionary(const Dictionary& src)
 	{
-		operator = (src);
+		m_size = src.m_size;
+
+		if (m_size > 0) {
+			m_words = new Word[m_size];
+			for (size_t i = 0; i < m_size; ++i) {
+				m_words[i] = src.m_words[i];
+			}
+		}
+		else {
+			m_words = nullptr;
+		}
 	}
 	Dictionary& Dictionary::operator=(const Dictionary& src)
 	{
 		if (this != &src)
 		{
-			delete[] m_words;
+			if (m_words != nullptr)
+			{
+				delete[] m_words;
+			}
 
 			m_size = src.m_size;
 
-			m_words = new Word[m_size];
-			for (size_t i = 0; i < m_size; i++)
+			if (m_size > 0)
 			{
-				m_words[i] = src.m_words[i];
+				m_words = new Word[m_size];
+				for (size_t i = 0; i < m_size; i++)
+				{
+					m_words[i] = src.m_words[i];
+				}
+			}
+			else
+			{
+				m_words = nullptr;
 			}
 		}
 
@@ -103,6 +125,7 @@ namespace seneca
 	Dictionary::~Dictionary()
 	{
 		delete[] m_words;
+		m_words = nullptr;
 	}
 
 	void Dictionary::searchWord(const char* word)
@@ -147,18 +170,24 @@ namespace seneca
 
 				cout << m_words[i].definition << endl;
 				searched = true;
-				if (!g_settings.m_show_all) 
+				if (!g_settings.m_show_all)
 				{
 					done = false;
 				}
 
+
 			}
 
 		}
+				if(!searched)
+				{
+					cout << "Word '" << word << "' was not found in the dictionary." << endl;
+				}
 	}
-	PartOfSpeech& Dictionary::parsePos(const string& strPos)
+	PartOfSpeech Dictionary::parsePos(const string& strPos)
 	{
-		PartOfSpeech pos;
+		PartOfSpeech pos = PartOfSpeech::Unknown;
+
 		if (strPos == "n." || strPos == "n.pl.")
 		{
 			pos = PartOfSpeech::Noun;
@@ -196,46 +225,4 @@ namespace seneca
 	}
 
 
-
-
-
-
-
-
-
-	/*void Dictionary::parsePos2(const string& strPos, PartOfSpeech& pos)
-	{
-		if (strPos == "n." || strPos == "n.pl.")
-		{
-			pos = PartOfSpeech::Noun;
-		}
-		else if (strPos == "adv.")
-		{
-			m_words[m_size].pos = PartOfSpeech::Adverb;
-		}
-		else if (strPos == "a.")
-		{
-			m_words[m_size].pos = PartOfSpeech::Adjective;
-		}
-		else if (strPos == "v." || strPos == "v. i." || strPos == "v. t." || strPos == "v. t. & i.")
-		{
-			m_words[m_size].pos = PartOfSpeech::Verb;
-		}
-		else if (strPos == "prep.")
-		{
-			m_words[m_size].pos = PartOfSpeech::Preposition;
-		}
-		else if (strPos == "pron.")
-		{
-			m_words[m_size].pos = PartOfSpeech::Pronoun;
-		}
-		else if (strPos == "conj.")
-		{
-			m_words[m_size].pos = PartOfSpeech::Conjunction;
-		}
-		else if (strPos == "interj.")
-		{
-			m_words[m_size].pos = PartOfSpeech::Interjection;
-		}
-	}*/
 }
