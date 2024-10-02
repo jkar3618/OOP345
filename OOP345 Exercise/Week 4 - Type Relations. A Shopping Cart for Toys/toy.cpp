@@ -48,16 +48,19 @@ namespace seneca
 
 	}
 
+	// Destructor
 	Toy::~Toy()
 	{
 		delete m_name;
 	}
 
+	// Update number of items
 	void Toy::update(int numItems)
 	{
 		m_qty = numItems;
 	}
 
+	// Copy assignment
 	Toy& Toy::operator=(Toy& src)
 	{
 		if (this != &src)

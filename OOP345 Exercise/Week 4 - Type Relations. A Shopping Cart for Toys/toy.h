@@ -14,7 +14,7 @@ namespace seneca
 		double m_tax{ 0.13 };
 
 	public:
-		Toy() {};
+		Toy() {}; // default
 		Toy(const std::string& toy);
 		~Toy();
 
