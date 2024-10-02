@@ -10,6 +10,7 @@ namespace seneca
 		int m_numOfToy{};
 
 	public:
+		ConfirmationOrder() {};
 		ConfirmationOrder(const ConfirmationOrder& co);
 		ConfirmationOrder(ConfirmationOrder&& co) noexcept;
 		~ConfirmationOrder();
@@ -19,6 +20,8 @@ namespace seneca
 		
 		ConfirmationOrder& operator+=(const Toy& toy);
 		ConfirmationOrder& operator-=(const Toy& toy);
+
+		friend std::ostream& operator<<(std::ostream& os, const ConfirmationOrder& order);
 	};
 
 }

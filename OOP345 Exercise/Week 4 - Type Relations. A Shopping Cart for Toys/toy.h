@@ -7,11 +7,11 @@ namespace seneca
 {
 	class Toy
 	{
-		unsigned int m_id{};
-		std::string name{};
-		unsigned int numOfItems{};
-		double price{};
-		double tax{ 0.13 };
+		unsigned int m_id{ 0 };
+		std::string* m_name{ nullptr };
+		unsigned int m_qty{ 0 };
+		double m_price{ 0.0 };
+		double m_tax{ 0.13 };
 
 	public:
 		Toy() {};

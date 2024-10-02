@@ -6,10 +6,12 @@ namespace seneca
 {
 	ConfirmationOrder::ConfirmationOrder(const ConfirmationOrder& co)
 	{
+		*this = co;
 	}
 
 	ConfirmationOrder::ConfirmationOrder(ConfirmationOrder&& co) noexcept
 	{
+		*this = std::move(co);
 	}
 
 	ConfirmationOrder::~ConfirmationOrder()
@@ -34,5 +36,10 @@ namespace seneca
 	ConfirmationOrder& ConfirmationOrder::operator-=(const Toy& toy)
 	{
 		return *this;
+	}
+
+	std::ostream& operator<<(std::ostream& os, const ConfirmationOrder& order)
+	{
+		return os;
 	}
 }
