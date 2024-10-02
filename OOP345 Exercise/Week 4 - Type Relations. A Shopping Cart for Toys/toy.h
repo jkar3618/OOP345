@@ -8,10 +8,10 @@ namespace seneca
 	class Toy
 	{
 		unsigned int m_id{ 0 };
-		std::string* m_name{ nullptr };
+		std::string m_name{ };
 		unsigned int m_qty{ 0 };
 		double m_price{ 0.0 };
-		double m_tax{ 0.13 };
+		const double m_tax{ 0.13 };
 
 	public:
 		Toy() {}; // default
@@ -20,7 +20,7 @@ namespace seneca
 
 		void update(int numItems);
 
-		Toy& operator=(Toy& src);
+		//Toy& operator=(Toy& src);
 		friend std::ostream& operator<<(std::ostream& os, const Toy& src);
 
 	};

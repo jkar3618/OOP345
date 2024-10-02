@@ -29,7 +29,6 @@ namespace seneca
 			m_qty = 0;
 			m_price = 0.0;
 			m_tax = 0.13;
-			m_name = new std::string;
 
 			while (getline(file, temp))
 			{
@@ -42,7 +41,12 @@ namespace seneca
 				getline(ss, strNum, ':');
 				getline(ss, strPrice);
 
-
+				m_id = std::stoi(strID);
+				int first = strName.find_first_not_of(" ");
+				int end = strName.find_last_not_of(" ");
+				m_name = strName.substr(first, end);
+				m_qty = std::stoi(strNum);
+				m_price = std::stod(strPrice);
 			}
 		}
 
@@ -51,7 +55,6 @@ namespace seneca
 	// Destructor
 	Toy::~Toy()
 	{
-		delete m_name;
 	}
 
 	// Update number of items
@@ -60,25 +63,20 @@ namespace seneca
 		m_qty = numItems;
 	}
 
-	// Copy assignment
-	Toy& Toy::operator=(Toy& src)
-	{
-		if (this != &src)
-		{
-			if (m_name != nullptr)
-			{
-				delete m_name;
-			}
+	//// Copy assignment
+	//Toy& Toy::operator=(Toy& src)
+	//{
+	//	if (this != &src)
+	//	{
+	//		m_id = src.m_id;
+	//		m_name = src.m_name;
+	//		m_qty = src.m_qty;
+	//		m_price = src.m_price;
+	//		m_tax = src.m_tax;
+	//	}
 
-			m_id = src.m_id;
-			m_name = src.m_name;
-			m_qty = src.m_qty;
-			m_price = src.m_price;
-			m_tax = src.m_tax;
-		}
-
-		return *this;
-	}
+	//	return *this;
+	//}
 
 	std::ostream& operator<<(std::ostream& os, const Toy& src)
 	{
@@ -87,6 +85,8 @@ namespace seneca
 		double total = subTotal + tax;
 
 		os << "Toy " << src.m_id << ":" << src.m_name << " " << src.m_qty << " items @ " << src.m_price << "/item subtotal: " << subTotal << " tax: " << tax << " total: " << total << endl;
+
+
 		return os;
 	}
 }
