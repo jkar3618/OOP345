@@ -1,7 +1,56 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\team.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\team.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\archer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\archer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\barbarian.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\barbarian.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\characterTpl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\characterTpl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\guild.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\guild.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\health.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\health.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\rogue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\rogue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\weapons.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\weapons.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\rogue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\rogue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\team.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\team.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\tester_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5935E51-5DEE-401E-A866-C73B45815E98}|Workshop 2 - RPG Game\\Workshop 2 - RPG Game.vcxproj|solutionrelative:Workshop 2 - RPG Game\\tester_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +58,163 @@
       "DocumentGroups": [
         {
           "DockedWidth": 192,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "archer.h",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\archer.h",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\archer.h",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\archer.h",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\archer.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-03T06:59:36.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "barbarian.h",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\barbarian.h",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\barbarian.h",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\barbarian.h",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\barbarian.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-03T06:59:28.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "character.h",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\character.h",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\character.h",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\character.h",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\character.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-03T06:59:23.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "characterTpl.h",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\characterTpl.h",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\characterTpl.h",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\characterTpl.h",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\characterTpl.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-03T06:59:17.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "guild.h",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\guild.h",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\guild.h",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\guild.h",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\guild.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-03T06:59:15.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "health.h",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\health.h",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\health.h",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\health.h",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\health.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-03T06:59:13.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "rogue.h",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\rogue.h",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\rogue.h",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\rogue.h",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\rogue.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-03T06:59:10.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "team.h",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\team.h",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\team.h",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\team.h",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\team.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-03T06:59:07.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "weapons.h",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\weapons.h",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\weapons.h",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\weapons.h",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\weapons.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-03T06:59:02.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "rogue.cpp",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\rogue.cpp",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\rogue.cpp",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\rogue.cpp",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\rogue.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-03T06:59:01.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "team.cpp",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\team.cpp",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\team.cpp",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\team.cpp",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\team.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-03T06:59:00.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "tester_1.cpp",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\tester_1.cpp",
+              "RelativeDocumentMoniker": "Workshop 2 - RPG Game\\tester_1.cpp",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 2 - RPG Game\\tester_1.cpp",
+              "RelativeToolTip": "Workshop 2 - RPG Game\\tester_1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-03T06:58:58.787Z",
+              "EditorCaption": ""
             }
           ]
         }

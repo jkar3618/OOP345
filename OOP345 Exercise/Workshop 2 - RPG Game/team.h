@@ -15,8 +15,8 @@ namespace seneca
 		Team(const char* name);
 		
 		// rule of 5
-		Team(const Team& t);
-		Team(Team&& t) noexcept;
+		Team(const Team& t); // copy constructor
+		Team(Team&& t) noexcept; // move constructor
 		~Team();
 
 		Team& operator=(const Team& t);
