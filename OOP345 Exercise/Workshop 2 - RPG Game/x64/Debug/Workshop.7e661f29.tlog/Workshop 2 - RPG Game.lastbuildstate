@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.39.33519:TargetPlatformVersion=10.0.22621.0:
 Debug|x64|C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\|
+=======
+PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.39.33519:TargetPlatformVersion=10.0.22621.0:
+Debug|x64|C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\|
+>>>>>>> 69c242c304a8380511264f99b4a1266495f8b178
