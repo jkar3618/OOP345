@@ -5,7 +5,7 @@
 namespace seneca
 {
 	template<typename T>
-	class CharacterTpl
+	class CharacterTpl: public Character
 	{
 		int m_healthMax;
 		T m_health;

@@ -63,20 +63,6 @@ namespace seneca
 		m_qty = numItems;
 	}
 
-	//// Copy assignment
-	//Toy& Toy::operator=(Toy& src)
-	//{
-	//	if (this != &src)
-	//	{
-	//		m_id = src.m_id;
-	//		m_name = src.m_name;
-	//		m_qty = src.m_qty;
-	//		m_price = src.m_price;
-	//		m_tax = src.m_tax;
-	//	}
-
-	//	return *this;
-	//}
 
 	std::ostream& operator<<(std::ostream& os, const Toy& src)
 	{

@@ -20,7 +20,6 @@ namespace seneca
 
 		void update(int numItems);
 
-		//Toy& operator=(Toy& src);
 		friend std::ostream& operator<<(std::ostream& os, const Toy& src);
 
 	};
