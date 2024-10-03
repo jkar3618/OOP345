@@ -1,24 +1,23 @@
-<<<<<<< HEAD
 ﻿  archer.cpp
   barbarian.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,45): error C2039: 'SuperHealth': is not a member of 'seneca'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,45): error C2039: 'SuperHealth': is not a member of 'seneca'
   (compiling source file 'archer.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(5,11):
+  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(6,11):
   see declaration of 'seneca'
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,45):
+  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,45):
   the template instantiation context (the oldest one first) is
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,8):
+  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,8):
   	while compiling class template 'seneca::Archer'
   
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,45): error C2065: 'SuperHealth': undeclared identifier
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,45): error C2065: 'SuperHealth': undeclared identifier
   (compiling source file 'archer.cpp')
   
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,24): error C2923: 'seneca::CharacterTpl': 'SuperHealth' is not a valid template type argument for parameter 'T'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,24): error C2923: 'seneca::CharacterTpl': 'SuperHealth' is not a valid template type argument for parameter 'T'
   (compiling source file 'archer.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,45):
+  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,45):
   see declaration of 'SuperHealth'
   
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,24): error C2955: 'seneca::CharacterTpl': use of class template requires template argument list
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,24): error C2955: 'seneca::CharacterTpl': use of class template requires template argument list
   (compiling source file 'archer.cpp')
   C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\characterTpl.h(8,8):
   see declaration of 'seneca::CharacterTpl'
@@ -99,105 +98,3 @@ C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbari
   	see reference to class template instantiation 'seneca::Barbarian<double,seneca::Fireball,seneca::Sword>' being compiled
   
   Generating Code...
-=======
-﻿  archer.cpp
-  barbarian.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,45): error C2039: 'SuperHealth': is not a member of 'seneca'
-  (compiling source file 'archer.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(5,11):
-  see declaration of 'seneca'
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,45):
-  the template instantiation context (the oldest one first) is
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,8):
-  	while compiling class template 'seneca::Archer'
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,45): error C2065: 'SuperHealth': undeclared identifier
-  (compiling source file 'archer.cpp')
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,24): error C2923: 'seneca::CharacterTpl': 'SuperHealth' is not a valid template type argument for parameter 'T'
-  (compiling source file 'archer.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,45):
-  see declaration of 'SuperHealth'
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(8,24): error C2955: 'seneca::CharacterTpl': use of class template requires template argument list
-  (compiling source file 'archer.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\characterTpl.h(8,8):
-  see declaration of 'seneca::CharacterTpl'
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7): error C2535: 'int seneca::Barbarian<T,Ability_t,Weapon_t>::getAttackAmnt(void) const': member function already defined or declared
-  (compiling source file 'barbarian.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(17,7):
-  see declaration of 'seneca::Barbarian<T,Ability_t,Weapon_t>::getAttackAmnt'
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7):
-  the template instantiation context (the oldest one first) is
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(8,8):
-  	while compiling class template 'seneca::Barbarian'
-  
-  characterTpl.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\characterTpl.cpp(21,26): error C2760: syntax error: 'm_health' was unexpected here; expected '('
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\characterTpl.cpp(33,14): error C3861: 'heath': identifier not found
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\characterTpl.cpp(33,14): error C2065: 'heath': undeclared identifier
-  guild.cpp
-  rogue.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(14,10): error C3646: 'm_weapon': unknown override specifier
-  (compiling source file 'rogue.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(14,10):
-  the template instantiation context (the oldest one first) is
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(8,8):
-  	while compiling class template 'seneca::Rogue'
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(14,18): error C2143: syntax error: missing ',' before '['
-  (compiling source file 'rogue.cpp')
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(14,21): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'rogue.cpp')
-  
-  team.cpp
-  tester_1.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7): error C2535: 'int seneca::Barbarian<T,Ability_t,Weapon_t>::getAttackAmnt(void) const': member function already defined or declared
-  (compiling source file 'tester_1.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(17,7):
-  see declaration of 'seneca::Barbarian<T,Ability_t,Weapon_t>::getAttackAmnt'
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7):
-  the template instantiation context (the oldest one first) is
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(8,8):
-  	while compiling class template 'seneca::Barbarian'
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7): error C2535: 'int seneca::Barbarian<double,seneca::Bersek,seneca::Sword>::getAttackAmnt(void) const': member function already defined or declared
-  (compiling source file 'tester_1.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(17,7):
-  see declaration of 'seneca::Barbarian<double,seneca::Bersek,seneca::Sword>::getAttackAmnt'
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7):
-  the template instantiation context (the oldest one first) is
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\tester_1.cpp(73,60):
-  	see reference to class template instantiation 'seneca::Barbarian<double,seneca::Bersek,seneca::Sword>' being compiled
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7): error C2535: 'int seneca::Barbarian<double,seneca::Heal,seneca::Axe>::getAttackAmnt(void) const': member function already defined or declared
-  (compiling source file 'tester_1.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(17,7):
-  see declaration of 'seneca::Barbarian<double,seneca::Heal,seneca::Axe>::getAttackAmnt'
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7):
-  the template instantiation context (the oldest one first) is
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\tester_1.cpp(74,58):
-  	see reference to class template instantiation 'seneca::Barbarian<double,seneca::Heal,seneca::Axe>' being compiled
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7): error C2535: 'int seneca::Barbarian<seneca::InfiniteHealth,seneca::Fireball,seneca::BareHands>::getAttackAmnt(void) const': member function already defined or declared
-  (compiling source file 'tester_1.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(17,7):
-  see declaration of 'seneca::Barbarian<seneca::InfiniteHealth,seneca::Fireball,seneca::BareHands>::getAttackAmnt'
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7):
-  the template instantiation context (the oldest one first) is
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\tester_1.cpp(75,82):
-  	see reference to class template instantiation 'seneca::Barbarian<seneca::InfiniteHealth,seneca::Fireball,seneca::BareHands>' being compiled
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7): error C2535: 'int seneca::Barbarian<double,seneca::Fireball,seneca::Sword>::getAttackAmnt(void) const': member function already defined or declared
-  (compiling source file 'tester_1.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(17,7):
-  see declaration of 'seneca::Barbarian<double,seneca::Fireball,seneca::Sword>::getAttackAmnt'
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(18,7):
-  the template instantiation context (the oldest one first) is
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\tester_1.cpp(76,62):
-  	see reference to class template instantiation 'seneca::Barbarian<double,seneca::Fireball,seneca::Sword>' being compiled
-  
-  Generating Code...
->>>>>>> 69c242c304a8380511264f99b4a1266495f8b178
