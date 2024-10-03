@@ -1,5 +1,5 @@
 #include <iostream>
-#include "barbarian.h"
+#include "archer.h"
 
 using namespace std;
 
