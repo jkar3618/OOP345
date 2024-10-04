@@ -28,7 +28,7 @@ namespace seneca
 	template<typename T>
 	int CharacterTpl<T>::getHealth() const
 	{
-		return static_cast<int>m_health;
+		return static_cast<int>(m_health);
 	}
 
 	template<typename T>

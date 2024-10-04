@@ -13,8 +13,8 @@ namespace seneca
 	template<typename T, typename Ability_t, typename Weapon_t>
 	int Barbarian<T, Ability_t, Weapon_t>::getAttackAmnt() const
 	{
-		int firstWeaponDamage = static<double>(m_weapon[0]);
-		int secondWeaponDamage = static<double>(m_weapon[1]);
+		int firstWeaponDamage = static_cast<double>(m_weapon[0]);
+		int secondWeaponDamage = static_cast<double>(m_weapon[1]);
 		int damage = m_baseAttack + (firstWeaponDamage / 2) + (secondWeaponDamage / 2);
 
 		return damage;
@@ -45,7 +45,7 @@ namespace seneca
 
 		m_ability.transformDamageDealt(damage);
 
-		cout << "Barbarian deals " << << damage << "melee damage!" << endl;
+		cout << "Barbarian deals " << damage << "melee damage!" << endl;
 
 		enemy->takeDamage(damage);
 	}

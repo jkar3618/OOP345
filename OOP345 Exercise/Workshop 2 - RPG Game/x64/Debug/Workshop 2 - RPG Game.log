@@ -1,53 +1,14 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Workshop 2 - RPG Game.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  archer.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,45): error C2039: 'SuperHealth': is not a member of 'seneca'
-  (compiling source file 'archer.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(6,11):
-  see declaration of 'seneca'
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,45):
-  the template instantiation context (the oldest one first) is
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,8):
-  	while compiling class template 'seneca::Archer'
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,45): error C2065: 'SuperHealth': undeclared identifier
-  (compiling source file 'archer.cpp')
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,24): error C2923: 'seneca::CharacterTpl': 'SuperHealth' is not a valid template type argument for parameter 'T'
-  (compiling source file 'archer.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,45):
-  see declaration of 'SuperHealth'
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(9,24): error C2955: 'seneca::CharacterTpl': use of class template requires template argument list
-  (compiling source file 'archer.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\characterTpl.h(8,8):
-  see declaration of 'seneca::CharacterTpl'
-  
   barbarian.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.cpp(17,27): error C2760: syntax error: 'static' was unexpected here; expected 'expression'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.cpp(17,33): error C2187: syntax error: '<' was unexpected here
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.cpp(17,33): error C3878: syntax error: unexpected token '<' following 'simple_declaration'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.cpp(17,33): message : error recovery skipped: '<'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.cpp(17,40): error C2760: syntax error: '>' was unexpected here; expected 'declaration'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.cpp(18,28): error C2760: syntax error: 'static' was unexpected here; expected 'expression'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.cpp(18,34): error C2187: syntax error: '<' was unexpected here
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.cpp(18,34): error C3878: syntax error: unexpected token '<' following 'simple_declaration'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.cpp(18,34): message : error recovery skipped: '<'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.cpp(18,41): error C2760: syntax error: '>' was unexpected here; expected 'declaration'
-  characterTpl.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\characterTpl.cpp(21,26): error C2760: syntax error: 'm_health' was unexpected here; expected '('
-  rogue.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(14,10): error C3646: 'm_weapon': unknown override specifier
-  (compiling source file 'rogue.cpp')
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(14,10):
-  the template instantiation context (the oldest one first) is
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(8,8):
-  	while compiling class template 'seneca::Rogue'
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(14,18): error C2143: syntax error: missing ',' before '['
-  (compiling source file 'rogue.cpp')
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(14,21): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'rogue.cpp')
-  
   tester_1.cpp
   Generating Code...
+tester_1.obj : error LNK2019: unresolved external symbol "public: __cdecl seneca::Rogue<class seneca::SuperHealth,class seneca::Heal,class seneca::Fireball>::Rogue<class seneca::SuperHealth,class seneca::Heal,class seneca::Fireball>(char const *,int,int,int)" (??0?$Rogue@VSuperHealth@seneca@@VHeal@2@VFireball@2@@seneca@@QEAA@PEBDHHH@Z) referenced in function main
+tester_1.obj : error LNK2019: unresolved external symbol "public: __cdecl seneca::Rogue<double,class seneca::Fireball,class seneca::Fireball>::Rogue<double,class seneca::Fireball,class seneca::Fireball>(char const *,int,int,int)" (??0?$Rogue@NVFireball@seneca@@V12@@seneca@@QEAA@PEBDHHH@Z) referenced in function main
+tester_1.obj : error LNK2019: unresolved external symbol "public: __cdecl seneca::Rogue<struct seneca::InfiniteHealth,class seneca::Bersek,class seneca::Bersek>::Rogue<struct seneca::InfiniteHealth,class seneca::Bersek,class seneca::Bersek>(char const *,int,int,int)" (??0?$Rogue@UInfiniteHealth@seneca@@VBersek@2@V32@@seneca@@QEAA@PEBDHHH@Z) referenced in function main
+tester_1.obj : error LNK2019: unresolved external symbol "public: __cdecl seneca::Archer<struct seneca::Crossbow>::Archer<struct seneca::Crossbow>(char const *,int,int,int,struct seneca::Crossbow)" (??0?$Archer@UCrossbow@seneca@@@seneca@@QEAA@PEBDHHHUCrossbow@1@@Z) referenced in function main
+tester_1.obj : error LNK2019: unresolved external symbol "public: __cdecl seneca::Archer<struct seneca::Bow>::Archer<struct seneca::Bow>(char const *,int,int,int,struct seneca::Bow)" (??0?$Archer@UBow@seneca@@@seneca@@QEAA@PEBDHHHUBow@1@@Z) referenced in function main
+tester_1.obj : error LNK2019: unresolved external symbol "public: __cdecl seneca::Barbarian<double,class seneca::Bersek,struct seneca::Sword>::Barbarian<double,class seneca::Bersek,struct seneca::Sword>(char const *,int,int,int,struct seneca::Sword,struct seneca::Sword)" (??0?$Barbarian@NVBersek@seneca@@USword@2@@seneca@@QEAA@PEBDHHHUSword@1@1@Z) referenced in function main
+tester_1.obj : error LNK2019: unresolved external symbol "public: __cdecl seneca::Barbarian<double,class seneca::Heal,struct seneca::Axe>::Barbarian<double,class seneca::Heal,struct seneca::Axe>(char const *,int,int,int,struct seneca::Axe,struct seneca::Axe)" (??0?$Barbarian@NVHeal@seneca@@UAxe@2@@seneca@@QEAA@PEBDHHHUAxe@1@1@Z) referenced in function main
+tester_1.obj : error LNK2019: unresolved external symbol "public: __cdecl seneca::Barbarian<struct seneca::InfiniteHealth,class seneca::Fireball,struct seneca::BareHands>::Barbarian<struct seneca::InfiniteHealth,class seneca::Fireball,struct seneca::BareHands>(char const *,int,int,int,struct seneca::BareHands,struct seneca::BareHands)" (??0?$Barbarian@UInfiniteHealth@seneca@@VFireball@2@UBareHands@2@@seneca@@QEAA@PEBDHHHUBareHands@1@1@Z) referenced in function main
+tester_1.obj : error LNK2019: unresolved external symbol "public: __cdecl seneca::Barbarian<double,class seneca::Fireball,struct seneca::Sword>::Barbarian<double,class seneca::Fireball,struct seneca::Sword>(char const *,int,int,int,struct seneca::Sword,struct seneca::Sword)" (??0?$Barbarian@NVFireball@seneca@@USword@2@@seneca@@QEAA@PEBDHHHUSword@1@1@Z) referenced in function main
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\x64\Debug\Workshop 2 - RPG Game.exe : fatal error LNK1120: 9 unresolved externals

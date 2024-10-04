@@ -1,6 +1,8 @@
 #ifndef SENECA_BARBARIAN_H
 #define SENECA_BARBARIAN_H
 #include "characterTpl.h"
+#include "abilities.h"
+#include "weapons.h"
 
 namespace seneca
 {

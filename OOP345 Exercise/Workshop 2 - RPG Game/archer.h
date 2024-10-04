@@ -2,6 +2,7 @@
 #ifndef SENECA_ARCHER_H
 #define SENECA_ARCHER_H
 #include "characterTpl.h"
+#include "weapons.h"
 
 namespace seneca
 {
