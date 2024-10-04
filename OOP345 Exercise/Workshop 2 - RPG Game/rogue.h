@@ -11,7 +11,7 @@ namespace seneca
 		int m_baseAttack;
 		FirstAbility_t m_firstAbility;
 		FirstAbility_t m_secondAbility;
-		Dagger m_weapon[2];
+		seneca::Dagger m_weapon;
 
 	public:
 		Rogue(const char* name, int healthMax, int baseAttack, int baseDefense);
@@ -23,6 +23,8 @@ namespace seneca
 
 
 	};
+
+
 
 }
 

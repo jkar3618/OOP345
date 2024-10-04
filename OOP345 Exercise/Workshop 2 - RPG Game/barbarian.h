@@ -15,7 +15,6 @@ namespace seneca
 	public:
 		Barbarian(const char* name, int healthMax, int baseAttack, int baseDefense, Weapon_t primaryWeapon, Weapon_t secondaryWeapon);
 		int getAttackAmnt() const;
-		int getAttackAmnt() const;
 		int getDefenseAmnt() const;
 		Character* clone() const;
 		void attack(Character* enemy);
@@ -23,6 +22,8 @@ namespace seneca
 
 
 	};
+
+
 
 }
 

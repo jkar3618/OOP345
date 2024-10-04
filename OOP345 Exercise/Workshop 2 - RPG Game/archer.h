@@ -21,6 +21,8 @@ namespace seneca
 		void takeDamage(int dmg);
 	};
 
+
+
 }
 
 #endif // !SENECA_ARCHER_H
