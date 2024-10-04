@@ -1,6 +1,7 @@
 #ifndef SENECA_ROGUE_H
 #define SENECA_ROGUE_H
 #include "characterTpl.h"
+#include "weapons.h"
 
 namespace seneca
 {
@@ -20,8 +21,6 @@ namespace seneca
 		Character* clone() const;
 		void attack(Character* enemy);
 		void takeDamage(int dmg);
-
-
 	};
 
 
