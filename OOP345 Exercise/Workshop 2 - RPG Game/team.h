@@ -8,7 +8,9 @@ namespace seneca
 	class Team
 	{
 		std::string m_name;
-		const Character** m_character{ nullptr };
+		size_t m_count;
+		size_t m_capacity; 
+		const Character** m_member;
 	
 	public:
 		Team();
@@ -28,7 +30,6 @@ namespace seneca
 		void showMembers() const;
 
 	};
-
 }
 
 #endif
