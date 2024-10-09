@@ -1,5 +1,7 @@
 #ifndef SENECA_BARBARIAN_H
 #define SENECA_BARBARIAN_H
+#include <iostream>
+#include <iomanip>
 #include "characterTpl.h"
 #include "abilities.h"
 #include "weapons.h"
@@ -67,7 +69,7 @@ namespace seneca
 
 		m_ability.transformDamageDealt(damage);
 
-		cout << "Barbarian deals " << damage << "melee damage!" << endl;
+		cout << setw(4) << "" << "Barbarian deals " << damage << " melee damage!" << endl;
 
 		enemy->takeDamage(damage);
 	}
@@ -78,7 +80,7 @@ namespace seneca
 		std::string name = this->getName();
 
 		cout  << name << " is attacked for " << dmg << " damage." << endl;
-		cout << '\t' << "Barbarian has a defense of " << m_baseDefense << ". " << "Reducing damage received." << endl;
+		cout << setw(4) << "" << "Barbarian has a defense of " << m_baseDefense << ". " << "Reducing damage received." << endl;
 
 		dmg -= m_baseDefense;
 		dmg = std::max(dmg, 0);

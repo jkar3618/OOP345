@@ -128,7 +128,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="archer.cpp" />
-    <ClCompile Include="barbarian.cpp" />
+    <ClCompile Include="barbarian.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="characterTpl.cpp" />
     <ClCompile Include="guild.cpp" />
     <ClCompile Include="rogue.cpp" />

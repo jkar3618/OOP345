@@ -44,14 +44,14 @@ namespace seneca
 		}
 		else
 		{
-			cout << name << " took " << dmg << " damage, " << m_health << " health remaing." << endl;
+			cout << setw(4) << "" << name << " took " << dmg << " damage, " << m_health << " health remaing." << endl;
 		}
 	}
 
 	template<typename T>
 	int CharacterTpl<T>::getHealth() const
 	{
-		return static_cast<int>(m_health);
+		return (static_cast<int>(m_health) > 0) ? static_cast<int>(m_health) : 0;
 	}
 
 	template<typename T>
