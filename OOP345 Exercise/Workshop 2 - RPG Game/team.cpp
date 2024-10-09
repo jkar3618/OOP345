@@ -106,14 +106,37 @@ namespace seneca
 
 	void Team::addMember(const Character* c)
 	{
+		int index = -1;
+
 		for (size_t i = 0; i < m_count; i++)
 		{
-			
+			if (m_member == &c)
+			{
+				index = i;
+			}
+		}
+
+		if (index == -1)
+		{
+			const Character** temp = nullptr;
+
+			temp = new const Character * [m_count + 1];
+
+			for (size_t i = 0; i < m_count; i++)
+			{
+				temp[i] = m_member[i];
+			}
+			temp[m_count] = c->clone();
+			delete[] m_member;
+
+			m_member = temp;
+			m_count++;
 		}
 	}
 
 	void Team::removeMember(const std::string& c)
 	{
+
 	}
 
 	Character* Team::operator[](size_t idx) const
