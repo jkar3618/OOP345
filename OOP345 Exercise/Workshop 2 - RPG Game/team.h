@@ -10,7 +10,7 @@ namespace seneca
 		std::string m_name;
 		size_t m_count;
 		size_t m_capacity; 
-		const Character** m_member;
+		Character** m_member;
 	
 	public:
 		Team();

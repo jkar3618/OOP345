@@ -14,23 +14,6 @@ namespace seneca
 
 	Team::Team(const Team& t)
 	{
-		/*m_name = t.m_name;
-		m_count = t.m_count;
-		m_capacity = t.m_capacity;
-
-		if (m_count > 0)
-		{
-			m_member = new Character * [m_capacity];
-
-			for (size_t i = 0; i < m_count; i++)
-			{
-				m_member[i] = t.m_member[i]->clone();
-			}
-		}
-		else
-		{
-			m_member = nullptr;
-		}*/
 
 		*this = t;
 	}
@@ -58,24 +41,24 @@ namespace seneca
 				delete m_member[i];
 			}
 			delete[] m_member;
-		}
 
-		m_name = t.m_name;
-		m_count = t.m_count;
-		m_capacity = t.m_capacity;
-		m_member = new Character * [m_count];
+			m_name = t.m_name;
+			m_count = t.m_count;
+			m_capacity = t.m_capacity;
+			m_member = new Character * [m_count];
 
-		if (m_count > 0)
-		{
-
-			for (size_t i = 0; i < m_count; i++)
+			if (m_count > 0)
 			{
-				m_member[i] = t.m_member[i]->clone();
+
+				for (size_t i = 0; i < m_count; i++)
+				{
+					m_member[i] = t.m_member[i]->clone();
+				}
 			}
-		}
-		else
-		{
-			m_member = nullptr;
+			else
+			{
+				m_member = nullptr;
+			}
 		}
 		return *this;
 	}
@@ -110,7 +93,7 @@ namespace seneca
 
 		for (size_t i = 0; i < m_count; i++)
 		{
-			if (m_member == &c)
+			if (m_member[i]->getName() == c->getName())
 			{
 				index = i;
 			}
@@ -118,9 +101,9 @@ namespace seneca
 
 		if (index == -1)
 		{
-			const Character** temp = nullptr;
+			Character** temp = nullptr;
 
-			temp = new const Character * [m_count + 1];
+			temp = new Character * [m_count + 1];
 
 			for (size_t i = 0; i < m_count; i++)
 			{
@@ -136,15 +119,55 @@ namespace seneca
 
 	void Team::removeMember(const std::string& c)
 	{
+		int index = -1;
 
+		for (size_t i = 0; i < m_count; i++)
+		{
+			if (m_member[i]->getName() == c)
+			{
+				index = i;
+			}
+		}
+
+
+		if (index != -1)
+		{
+			Character** temp = new Character * [m_count - 1];
+
+			for (size_t i = 0, j = 0; i < m_count; i++)
+			{
+				if (i != index)
+				{
+					temp[j++] = m_member[i];
+				}
+			}
+
+			delete[] m_member;
+			m_member = temp;
+			m_count--;
+
+		}
 	}
 
 	Character* Team::operator[](size_t idx) const
 	{
-		return nullptr;
+		return (idx < m_count) ? m_member[idx] : nullptr;
 	}
 
 	void Team::showMembers() const
 	{
+		if (m_member == nullptr)
+		{
+			cout << "No team." << endl;
+		}
+		else
+		{
+			cout << "[Team] " << m_name << endl;
+			for (size_t i = 0; i < m_count; i++)
+			{
+				cout << i + 1 << ": " << *m_member[i] << endl;
+			}
+
+		}
 	}
 }

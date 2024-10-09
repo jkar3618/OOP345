@@ -6,8 +6,10 @@ namespace seneca
 {
 	class Guild
 	{
-		const Character** m_character{ nullptr };
-		int m_extraHP{ 300 };
+		Character** m_member;
+		std::string m_name;
+		int m_extraHP;
+		int m_count;
 
 	public:
 		Guild();
