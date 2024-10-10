@@ -1,20 +1,51 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Workshop 2 - RPG Game.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Workshop 2 - RPG Game.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   archer.cpp
   barbarian.cpp
   characterTpl.cpp
+  guild.cpp
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\guild.cpp(88,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\guild.cpp(119,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   rogue.cpp
+  team.cpp
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\team.cpp(109,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\team.cpp(139,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   tester_1.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(37,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(36): message : while compiling class template member function 'int seneca::Rogue<seneca::SuperHealth,seneca::Heal,seneca::Fireball>::getAttackAmnt(void) const'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\tester_1.cpp(65): message : see reference to class template instantiation 'seneca::Rogue<seneca::SuperHealth,seneca::Heal,seneca::Fireball>' being compiled
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(36,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(35): message : while compiling class template member function 'int seneca::Archer<seneca::Crossbow>::getAttackAmnt(void) const'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\tester_1.cpp(69): message : see reference to class template instantiation 'seneca::Archer<seneca::Crossbow>' being compiled
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(43,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(42): message : while compiling class template member function 'int seneca::Archer<seneca::Crossbow>::getDefenseAmnt(void) const'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(40,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(39): message : while compiling class template member function 'int seneca::Barbarian<double,seneca::Bersek,seneca::Sword>::getAttackAmnt(void) const'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\tester_1.cpp(73): message : see reference to class template instantiation 'seneca::Barbarian<double,seneca::Bersek,seneca::Sword>' being compiled
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(41,26): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(48,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'tester_1.cpp')
+  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(48,14):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\tester_1.cpp(65,70):
+  	see reference to class template instantiation 'seneca::Rogue<seneca::SuperHealth,seneca::Heal,seneca::Fireball>' being compiled
+  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\rogue.h(47,2):
+  	while compiling class template member function 'int seneca::Rogue<seneca::SuperHealth,seneca::Heal,seneca::Fireball>::getAttackAmnt(void) const'
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(47,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'tester_1.cpp')
+  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(47,14):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\tester_1.cpp(69,36):
+  	see reference to class template instantiation 'seneca::Archer<seneca::Crossbow>' being compiled
+  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(46,2):
+  	while compiling class template member function 'int seneca::Archer<seneca::Crossbow>::getAttackAmnt(void) const'
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(54,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'tester_1.cpp')
+  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(54,15):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\archer.h(53,2):
+  	while compiling class template member function 'int seneca::Archer<seneca::Crossbow>::getDefenseAmnt(void) const'
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(51,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'tester_1.cpp')
+  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(51,25):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\tester_1.cpp(73,60):
+  	see reference to class template instantiation 'seneca::Barbarian<double,seneca::Bersek,seneca::Sword>' being compiled
+  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(50,2):
+  	while compiling class template member function 'int seneca::Barbarian<double,seneca::Bersek,seneca::Sword>::getAttackAmnt(void) const'
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 2 - RPG Game\barbarian.h(52,26): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'tester_1.cpp')
+  
   Generating Code...
   Workshop 2 - RPG Game.vcxproj -> C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\x64\Debug\Workshop 2 - RPG Game.exe
