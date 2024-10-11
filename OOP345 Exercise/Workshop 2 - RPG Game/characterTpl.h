@@ -18,6 +18,7 @@ using namespace std;
 
 namespace seneca
 {
+	// Template class CharacterTpl inheriting from Character
 	template<typename T>
 	class CharacterTpl: public Character
 	{
@@ -25,24 +26,35 @@ namespace seneca
 		T m_health;
 
 	public:
+		// Constructor
 		CharacterTpl(const std::string& name, int max);
 
+		// Override taking damag
 		void takeDamage(int dmg) override;
+
+		// Override get health
 		int getHealth() const override;
+
+		// Override get health max
 		int getHealthMax() const override;
+
+		// Override set health
 		void setHealth(int health) override;
+
+		// Override set health max
 		void setHealthMax(int max) override;
 
 
 	};
 
-
+	// Constructor
 	template<typename T>
 	CharacterTpl<T>::CharacterTpl(const std::string& name, int max) :Character(name.c_str()), m_healthMax(max) 
 	{
 		m_health = max;
 	}
 
+	// Override taking damag
 	template<typename T>
 	void CharacterTpl<T>::takeDamage(int dmg)
 	{
@@ -60,24 +72,28 @@ namespace seneca
 		}
 	}
 
+	// Override get health
 	template<typename T>
 	int CharacterTpl<T>::getHealth() const
 	{
 		return (static_cast<int>(m_health) > 0) ? static_cast<int>(m_health) : 0;
 	}
 
+	// Override get health max
 	template<typename T>
 	int CharacterTpl<T>::getHealthMax() const
 	{
 		return m_healthMax;
 	}
 
+	// Override set health
 	template<typename T>
 	void CharacterTpl<T>::setHealth(int health)
 	{
 		m_health = health;
 	}
 
+	// Override set health max
 	template<typename T>
 	void CharacterTpl<T>::setHealthMax(int max)
 	{

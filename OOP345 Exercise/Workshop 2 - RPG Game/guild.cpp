@@ -15,32 +15,43 @@ using namespace std;
 
 namespace seneca
 {
+	// Defalut Constructor
 	Guild::Guild() : m_member(nullptr), m_name(""), m_extraHP(300), m_count(0)
 	{
 	}
+
+	// Constructor that initialize guild with name
 	Guild::Guild(const char* name) : m_member(nullptr), m_name(name), m_extraHP(300), m_count(0)
 	{
 	}
+
+	// Copy Constructor
 	Guild::Guild(const Guild& g)
 		: m_name(g.m_name), m_extraHP(g.m_extraHP), m_count(g.m_count)
 	{
-		// 새로운 메모리 할당 및 깊은 복사
+		// Allocate new memory and perform deep copy
 		m_member = new Character * [m_count];
 		for (int i = 0; i < m_count; i++) {
-			m_member[i] = g.m_member[i]; // 깊은 복사
+			m_member[i] = g.m_member[i]; 
 		}
 	}
+
+	// Move Constructor
 	Guild::Guild(Guild&& g) noexcept
 		: m_member(g.m_member), m_name(std::move(g.m_name)), m_extraHP(g.m_extraHP), m_count(g.m_count)
 	{
-		g.m_member = nullptr; // 원본 객체의 포인터 초기화
-		g.m_count = 0;        // 원본 객체의 멤버 수 초기화
+		// Initialize original object's pointer
+		g.m_member = nullptr; 
+		g.m_count = 0;        
 	}
+
+	// Destructor
 	Guild::~Guild() {
 
-		delete[] m_member; // 멤버 배열 해제
+		delete[] m_member;
 	}
 
+	// Copy assignment operator
 	Guild& Guild::operator=(const Guild& g)
 	{
 		if (this != &g)
@@ -70,35 +81,37 @@ namespace seneca
 		return *this;
 	}
 
-
+	// Move assignment operator
 	Guild& Guild::operator=(Guild&& g) noexcept
 	{
 		if (this != &g)
 		{
-			// 기존 메모리 해제
-			delete[] m_member; // 기존 멤버 해제
+			// Clean up existing memory
+			delete[] m_member; 
 
-			// 이동 연산
-			m_member = g.m_member; // 포인터 이동
+			m_member = g.m_member;
 			m_name = std::move(g.m_name);
 			m_extraHP = g.m_extraHP;
 			m_count = g.m_count;
 
-			// 원본 객체 초기화
+
 			g.m_member = nullptr;
 			g.m_count = 0;
 		}
 
 		return *this;
 	}
+
+	// Add member to guild
 	void Guild::addMember(Character* c)
 	{
-		// 중복 체크
+		// Check for duplicates
 		bool flag = false;
+
 		for (int i = 0; i < m_count; i++)
 		{
 			if (m_member[i] == c) {
-				flag = true; // 중복이 발견되면 플래그 설정
+				flag = true; // Set flag if duplicate is found
 			}
 		}
 
@@ -111,6 +124,7 @@ namespace seneca
 				temp[i] = m_member[i];
 			}
 
+			// Add new member
 			temp[m_count] = c;
 			m_count++;
 
@@ -118,29 +132,22 @@ namespace seneca
 
 			m_member = temp;
 
-			// 새로운 멤버의 최대 체력을 300 포인트 증가
+			// Increase new member's maximum health by 300 points
 			int newHealthMax = c->getHealthMax() + m_extraHP;
 			c->setHealthMax(newHealthMax);
 
-			// 체력을 최대 체력으로 설정
-			c->setHealth(newHealthMax); // 최대 체력으로 설정
-			c->setHealthMax(newHealthMax);
+			// Set health to max
+			c->setHealth(newHealthMax);
 
-			// 캐릭터의 현재 체력이 최대 체력보다 크면 최대 체력으로 설정
+			// Ensure current health doesn't exceed maximum
 			if (c->getHealth() > c->getHealthMax())
 			{
 				c->setHealth(c->getHealthMax());
 			}
-
-			/*c->setHealthMax(c->getHealthMax() + m_extraHP);
-			c->setHealth(c->getHealthMax());
-
-			if (c->getHealth() > c->getHealthMax()) 
-			{
-				c->setHealth(c->getHealthMax());
-			}*/
 		}
 	}
+
+	// Remove member by name
 	void Guild::removeMember(const std::string& c)
 	{
 		int index = -1;
@@ -165,16 +172,19 @@ namespace seneca
 				}
 			}
 
+			// Decrease health and max health for the removed member
 			m_member[index]->setHealthMax(m_member[index]->getHealthMax() - m_extraHP);
 			m_member[index]->setHealth(m_member[index]->getHealth() - m_extraHP);
 
 
-			delete[] m_member;
-			m_member = temp;
-			m_count--;
+			delete[] m_member; // Release old member array
+			m_member = temp; // Point to the new array
+			m_count--; // Decrease member count
 
 		}
 	}
+
+	// Subscript operator
 	Character* Guild::operator[](size_t idx) const
 	{
 		Character* result = nullptr;
@@ -184,6 +194,8 @@ namespace seneca
 		}
 		return result;
 	}
+
+	// Display all guild members
 	void Guild::showMembers() const
 	{
 		if (m_member == nullptr)

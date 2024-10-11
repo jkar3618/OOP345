@@ -23,21 +23,21 @@ namespace seneca
 		int m_count;
 
 	public:
-		Guild();
-		Guild(const char* name);
+		Guild(); // Defalut Constructor
+		Guild(const char* name); // Constructor that initialize guild with name
 
 		//rule of 5
-		Guild(const Guild& g);
-		Guild(Guild&& g) noexcept;
-		~Guild();
+		Guild(const Guild& g); // Copy Constructor
+		Guild(Guild&& g) noexcept; // Move Constructor
+		~Guild(); // Destructor
 
-		Guild& operator=(const Guild& g);
-		Guild& operator=(Guild&& g) noexcept;
+		Guild& operator=(const Guild& g); // Copy assignment operator
+		Guild& operator=(Guild&& g) noexcept; // Move assignment operator
 
-		void addMember(Character* c);
-		void removeMember(const std::string& c);
-		Character* operator[](size_t idx) const;
-		void showMembers() const;
+		void addMember(Character* c); // Add member to guild
+		void removeMember(const std::string& c); // Remove member by name
+		Character* operator[](size_t idx) const; // Subscript operator
+		void showMembers() const; // Display all guild members
 	};
 
 }

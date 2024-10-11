@@ -21,6 +21,7 @@ using namespace std;
 
 namespace seneca
 {
+	// define template class Barbarian, inheritance from CharacterTpl<T>
 	template<typename T, typename Ability_t, typename Weapon_t>
 	class Barbarian : public CharacterTpl<T>
 	{
@@ -30,21 +31,34 @@ namespace seneca
 		Weapon_t m_weapon[2];
 
 	public:
+		// Constructor
 		Barbarian(const char* name, int healthMax, int baseAttack, int baseDefense, Weapon_t primaryWeapon, Weapon_t secondaryWeapon);
+		
+		// Calculate attack amount
 		int getAttackAmnt() const;
+
+		// Return defense amount
 		int getDefenseAmnt() const;
+
+		// creat a clone of the Barbarian obj
 		Character* clone() const;
+
+		// attack
 		void attack(Character* enemy);
+
+		// Take damage from attack
 		void takeDamage(int dmg);
 
 
 	};
 
+	// Constructor
 	template<typename T, typename Ability_t, typename Weapon_t>
 	Barbarian<T, Ability_t, Weapon_t>::Barbarian(const char* name, int healthMax, int baseAttack, int baseDefense, Weapon_t primaryWeapon, Weapon_t secondaryWeapon) : CharacterTpl<T>(name, healthMax), m_baseAttack(baseAttack), m_baseDefense(baseDefense), m_weapon{ primaryWeapon, secondaryWeapon }
 	{
 	}
 
+	// Calculate attack amount
 	template<typename T, typename Ability_t, typename Weapon_t>
 	int Barbarian<T, Ability_t, Weapon_t>::getAttackAmnt() const
 	{
@@ -56,18 +70,21 @@ namespace seneca
 		return damage;
 	}
 
+	// Return defense amount
 	template<typename T, typename Ability_t, typename Weapon_t>
 	int Barbarian<T, Ability_t, Weapon_t>::getDefenseAmnt() const
 	{
 		return m_baseDefense;
 	}
 
+	// creat a clone of the Barbarian obj
 	template<typename T, typename Ability_t, typename Weapon_t>
 	Character* Barbarian<T, Ability_t, Weapon_t>::clone() const
 	{
 		return new Barbarian(*this);
 	}
 
+	// attack
 	template<typename T, typename Ability_t, typename Weapon_t>
 	void Barbarian<T, Ability_t, Weapon_t>::attack(Character* enemy)
 	{
@@ -86,6 +103,7 @@ namespace seneca
 		enemy->takeDamage(damage);
 	}
 
+	// Take damage from attack
 	template<typename T, typename Ability_t, typename Weapon_t>
 	void Barbarian<T, Ability_t, Weapon_t>::takeDamage(int dmg)
 	{

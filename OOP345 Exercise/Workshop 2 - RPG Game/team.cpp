@@ -16,29 +16,32 @@ using namespace std;
 
 namespace seneca
 {
+	// Default constructor
 	Team::Team() : m_name(""), m_count(0), m_capacity(0), m_member(nullptr)
 	{
 	}
 
+	// Constructor with name
 	Team::Team(const char* name) : m_name(name), m_count(0), m_capacity(0), m_member(nullptr)
 	{
 	}
 
+	// Copy constructor
 	Team::Team(const Team& t) : m_count(0), m_capacity(0), m_member(nullptr)
 	{
-
 		*this = t;
 	}
 
+	// Move constructor
 	Team::Team(Team&& t) noexcept
 		: m_name(std::move(t.m_name)), m_count(t.m_count), m_capacity(t.m_capacity), m_member(t.m_member)
 	{
-		// 원본 객체 초기화
 		t.m_count = 0;
 		t.m_capacity = 0;
-		t.m_member = nullptr; // 원본 객체의 포인터 초기화
+		t.m_member = nullptr; 
 	}
 
+	// Destructor
 	Team::~Team()
 	{
 		for (size_t i = 0; i < m_count; i++)
@@ -48,16 +51,18 @@ namespace seneca
 		delete[] m_member;
 	}
 
+	// Copy assignment operator
 	Team& Team::operator=(const Team& t)
 	{
 		if (this != &t)
 		{
 			for (size_t i = 0; i < m_count; i++)
 			{
-				delete m_member[i];
+				delete m_member[i]; // Delete existing characters
 			}
-			delete[] m_member;
+			delete[] m_member; // Release the member array
 
+			// Copy new values
 			m_name = t.m_name;
 			m_count = t.m_count;
 			m_capacity = t.m_capacity;
@@ -65,7 +70,7 @@ namespace seneca
 
 			if (m_count > 0)
 			{
-
+				// Clone characters from the source team
 				for (size_t i = 0; i < m_count; i++)
 				{
 					m_member[i] = t.m_member[i]->clone();
@@ -79,11 +84,12 @@ namespace seneca
 		return *this;
 	}
 
+	// Move assignment operator
 	Team& Team::operator=(Team&& t) noexcept
 	{
 		if (this != &t)
 		{
-			// m_member가 nullptr인지 확인
+			// Clean up existing members if necessary
 			if (m_member != nullptr) {
 				for (size_t i = 0; i < m_count; i++)
 				{
@@ -92,13 +98,13 @@ namespace seneca
 				delete[] m_member;
 			}
 
-			// 이동 연산
+			// Move operation
 			m_name = t.m_name;
 			m_count = t.m_count;
 			m_capacity = t.m_capacity;
 			m_member = t.m_member;
 
-			// 원본 객체 초기화
+			// Initialize the original object
 			t.m_name = "";
 			t.m_count = 0;
 			t.m_capacity = 0;
@@ -108,18 +114,21 @@ namespace seneca
 		return *this;
 	}
 
+	// Method to add a member to the team
 	void Team::addMember(const Character* c)
 	{
+		// Check for duplicate members
 		int index = -1;
 
 		for (size_t i = 0; i < m_count; i++)
 		{
 			if (m_member[i]->getName() == c->getName())
 			{
-				index = i;
+				index = i; // Duplicate found
 			}
 		}
 
+		// If no duplicate, add new member
 		if (index == -1)
 		{
 			Character** temp = nullptr;
@@ -128,29 +137,31 @@ namespace seneca
 
 			for (size_t i = 0; i < m_count; i++)
 			{
-				temp[i] = m_member[i];
+				temp[i] = m_member[i]; // Copy existing members
 			}
-			temp[m_count] = c->clone();
-			delete[] m_member;
+			temp[m_count] = c->clone(); // Clone new member
+			delete[] m_member; // Release old member array
 
-			m_member = temp;
+			m_member = temp; // Update member pointer
 			m_count++;
 		}
 	}
 
+	// Method to remove a member from the team by name
 	void Team::removeMember(const std::string& c)
 	{
-		size_t index = m_count;
+		size_t index = m_count; // Start with an invalid index
 
+		// Search for the member to remove
 		for (size_t i = 0; i < m_count; i++)
 		{
 			if (m_member[i]->getName() == c)
 			{
-				index = i;
+				index = i; // Store index if found
 			}
 		}
 
-
+		// If the member was found, remove them
 		if (index != m_count)
 		{
 			Character** temp = new Character * [m_count - 1];
@@ -159,22 +170,23 @@ namespace seneca
 			{
 				if (i != index)
 				{
-					temp[j++] = m_member[i];
+					temp[j++] = m_member[i]; // Copy members except the one to remove
 				}
 			}
 
-			delete[] m_member;
-			m_member = temp;
-			m_count--;
-
+			delete[] m_member; // Release old member array
+			m_member = temp; // Update member pointer
+			m_count--; // Decrement member count
 		}
 	}
 
+	// Operator overload to access team members by index
 	Character* Team::operator[](size_t idx) const
 	{
 		return (idx < m_count) ? m_member[idx] : nullptr;
 	}
 
+	// Method to display all team members
 	void Team::showMembers() const
 	{
 		if (m_member == nullptr)

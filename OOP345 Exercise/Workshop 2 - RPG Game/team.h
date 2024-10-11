@@ -24,20 +24,27 @@ namespace seneca
 		Character** m_member;
 	
 	public:
-		Team();
-		Team(const char* name);
+		Team(); // Default constructor
+		Team(const char* name); // Constructor with name 
 		
 		// rule of 5
-		Team(const Team& t); // copy constructor
-		Team(Team&& t) noexcept; // move constructor
-		~Team();
+		Team(const Team& t); // Copy constructor
+		Team(Team&& t) noexcept; // Move constructor
+		~Team(); // Destructor
 
-		Team& operator=(const Team& t);
-		Team& operator=(Team&& t) noexcept;
+		Team& operator=(const Team& t); // Copy assignment operator
+		Team& operator=(Team&& t) noexcept; // Move assignment operator
 
+		// Method to add a member to the team
 		void addMember(const Character* c);
+
+		// Method to remove a member from the team by name
 		void removeMember(const std::string& c);
+
+		// Operator overload to access team members by index
 		Character* operator[](size_t idx) const;
+
+		// Method to display all team members
 		void showMembers() const;
 
 	};

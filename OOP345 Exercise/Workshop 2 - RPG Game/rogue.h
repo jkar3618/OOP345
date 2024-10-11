@@ -19,6 +19,7 @@ using namespace std;
 
 namespace seneca
 {
+	// Define template class Archer, inheritance from CharacterTpl<T>
 	template<typename T, typename FirstAbility_t, typename SecondAbility_t>
 	class Rogue : public CharacterTpl<T>
 	{
@@ -29,19 +30,32 @@ namespace seneca
 		Dagger m_weapon;
 
 	public:
+		// Constructor
 		Rogue(const char* name, int healthMax, int baseAttack, int baseDefense);
+
+		// Calculate attack amount
 		int getAttackAmnt() const;
+
+		// Return defense amount
 		int getDefenseAmnt() const;
+
+		// Creat a clone of the Rogue obj
 		Character* clone() const;
+
+		// Attack
 		void attack(Character* enemy);
+
+		// Take damage from attack
 		void takeDamage(int dmg);
 	};
 
+	// Constructor
 	template<typename T, typename FirstAbility_t, typename SecondAbility_t>
 	Rogue<T, FirstAbility_t, SecondAbility_t>::Rogue(const char* name, int healthMax, int baseAttack, int baseDefense) :CharacterTpl<T>(name, healthMax), m_baseAttack(baseAttack), m_baseDefense(baseDefense)
 	{
 	}
 
+	// Caculate attack amount
 	template<typename T, typename FirstAbility_t, typename SecondAbility_t>
 	int Rogue<T, FirstAbility_t, SecondAbility_t>::getAttackAmnt() const
 	{
@@ -49,18 +63,21 @@ namespace seneca
 		return static_cast<int>(damage);
 	}
 
+	// Return defense amount
 	template<typename T, typename FirstAbility_t, typename SecondAbility_t>
 	int Rogue<T, FirstAbility_t, SecondAbility_t>::getDefenseAmnt() const
 	{
 		return m_baseDefense;
 	}
 
+	// Create clone of Rogue obj
 	template<typename T, typename FirstAbility_t, typename SecondAbility_t>
 	Character* Rogue<T, FirstAbility_t, SecondAbility_t>::clone() const
 	{
 		return new Rogue(*this);
 	}
 
+	// Attack
 	template<typename T, typename FirstAbility_t, typename SecondAbility_t>
 	void Rogue<T, FirstAbility_t, SecondAbility_t>::attack(Character* enemy)
 	{
@@ -82,6 +99,7 @@ namespace seneca
 		enemy->takeDamage(damage);
 	}
 
+	// Take damage 
 	template<typename T, typename FirstAbility_t, typename SecondAbility_t>
 	void Rogue<T, FirstAbility_t, SecondAbility_t>::takeDamage(int dmg)
 	{
@@ -101,9 +119,6 @@ namespace seneca
 		CharacterTpl<T>::takeDamage(dmg);
 
 	}
-
-
-
 }
 
 #endif

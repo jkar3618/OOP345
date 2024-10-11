@@ -20,6 +20,7 @@ using namespace std;
 
 namespace seneca
 {
+	// Define template class Archer, inheritance from CharacterTpl<SuperHealth>
 	template<typename Weapon_t>
 	class Archer : public CharacterTpl<seneca::SuperHealth>
 	{
@@ -28,19 +29,32 @@ namespace seneca
 		Weapon_t m_weapon;
 
 	public:
+		// Constructor
 		Archer(const char* name, int healthMax, int baseAttack, int baseDefense, Weapon_t weapon);
+
+		// Calculate attack amount
 		int getAttackAmnt() const;
+
+		// Calculate defense amount
 		int getDefenseAmnt() const;
+
+		// Creat a clone of the Archer obj
 		Character* clone() const;
+
+		// Attack
 		void attack(Character* enemy);
+
+		// Take damage from attack
 		void takeDamage(int dmg);
 	};
 
+	// Constructor
 	template<typename Weapon_t>
 	Archer<Weapon_t>::Archer(const char* name, int healthMax, int baseAttack, int baseDefense, Weapon_t weapon) : CharacterTpl(name, healthMax), m_baseAttack(baseAttack), m_baseDefense(baseDefense), m_weapon(weapon)
 	{
 	}
 
+	// Caculate attack amount
 	template<typename Weapon_t>
 	int Archer<Weapon_t>::getAttackAmnt() const
 	{
@@ -48,6 +62,7 @@ namespace seneca
 		return damage;
 	}
 
+	// Calculate defense amount
 	template<typename Weapon_t>
 	int Archer<Weapon_t>::getDefenseAmnt() const
 	{
@@ -55,12 +70,14 @@ namespace seneca
 		return defense;
 	}
 
+	// Create clone of Archer obj
 	template<typename Weapon_t>
 	Character* Archer<Weapon_t>::clone() const
 	{
 		return new Archer(*this);
 	}
 
+	// Attack
 	template<typename Weapon_t>
 	void Archer<Weapon_t>::attack(Character* enemy)
 	{
@@ -76,6 +93,7 @@ namespace seneca
 		enemy->takeDamage(damage);
 	}
 
+	// Take damage 
 	template<typename Weapon_t>
 	void Archer<Weapon_t>::takeDamage(int dmg)
 	{
