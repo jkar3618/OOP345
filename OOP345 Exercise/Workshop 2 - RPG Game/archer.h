@@ -23,8 +23,8 @@ namespace seneca
 	template<typename Weapon_t>
 	class Archer : public CharacterTpl<seneca::SuperHealth>
 	{
-		int m_baseDefense;
 		int m_baseAttack;
+		int m_baseDefense;
 		Weapon_t m_weapon;
 
 	public:
@@ -44,7 +44,7 @@ namespace seneca
 	template<typename Weapon_t>
 	int Archer<Weapon_t>::getAttackAmnt() const
 	{
-		int damage = static_cast<double>(1.3 * m_baseAttack);
+		int damage = static_cast<int>(1.3 * m_baseAttack);
 		return damage;
 	}
 

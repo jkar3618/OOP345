@@ -22,8 +22,8 @@ namespace seneca
 	template<typename T, typename FirstAbility_t, typename SecondAbility_t>
 	class Rogue : public CharacterTpl<T>
 	{
-		int m_baseDefense;
 		int m_baseAttack;
+		int m_baseDefense;
 		FirstAbility_t m_firstAbility;
 		FirstAbility_t m_secondAbility;
 		Dagger m_weapon;
@@ -46,7 +46,7 @@ namespace seneca
 	int Rogue<T, FirstAbility_t, SecondAbility_t>::getAttackAmnt() const
 	{
 		int damage = m_baseAttack + 2 * static_cast<double>(m_weapon);
-		return damage;
+		return static_cast<int>(damage);
 	}
 
 	template<typename T, typename FirstAbility_t, typename SecondAbility_t>

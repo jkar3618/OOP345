@@ -52,11 +52,11 @@ namespace seneca
 
 		if (m_health < 0)
 		{
-			cout << name << " has been defeated!" << endl;
+			cout << setw(4) << "" << name << " has been defeated!" << endl;
 		}
 		else
 		{
-			cout << setw(4) << "" << name << " took " << dmg << " damage, " << m_health << " health remaing." << endl;
+			cout << setw(4) << "" << name << " took " << dmg << " damage, " << m_health << " health remaining." << endl;
 		}
 	}
 

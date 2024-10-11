@@ -10,6 +10,7 @@
 //piece of work is entirely of my own creation.
 //* ****************************************************************************
 #include <iostream>
+#include <iomanip>
 #include "team.h"
 using namespace std;
 
@@ -23,15 +24,19 @@ namespace seneca
 	{
 	}
 
-	Team::Team(const Team& t)
+	Team::Team(const Team& t) : m_count(0), m_capacity(0), m_member(nullptr)
 	{
 
 		*this = t;
 	}
 
 	Team::Team(Team&& t) noexcept
+		: m_name(std::move(t.m_name)), m_count(t.m_count), m_capacity(t.m_capacity), m_member(t.m_member)
 	{
-		*this = std::move(t);
+		// 원본 객체 초기화
+		t.m_count = 0;
+		t.m_capacity = 0;
+		t.m_member = nullptr; // 원본 객체의 포인터 초기화
 	}
 
 	Team::~Team()
@@ -78,22 +83,27 @@ namespace seneca
 	{
 		if (this != &t)
 		{
-			for (size_t i = 0; i < m_count; i++)
-			{
-				delete m_member[i];
+			// m_member가 nullptr인지 확인
+			if (m_member != nullptr) {
+				for (size_t i = 0; i < m_count; i++)
+				{
+					delete m_member[i];
+				}
+				delete[] m_member;
 			}
-			delete[] m_member;
+
+			// 이동 연산
+			m_name = t.m_name;
+			m_count = t.m_count;
+			m_capacity = t.m_capacity;
+			m_member = t.m_member;
+
+			// 원본 객체 초기화
+			t.m_name = "";
+			t.m_count = 0;
+			t.m_capacity = 0;
+			t.m_member = nullptr;
 		}
-
-		m_name = std::move(t.m_name);
-		m_count = t.m_count;
-		m_capacity = t.m_capacity;
-		m_member = t.m_member;
-
-		t.m_name = "";
-		t.m_count = 0;
-		t.m_capacity = 0;
-		t.m_member = nullptr;
 
 		return *this;
 	}
@@ -130,7 +140,7 @@ namespace seneca
 
 	void Team::removeMember(const std::string& c)
 	{
-		int index = -1;
+		size_t index = m_count;
 
 		for (size_t i = 0; i < m_count; i++)
 		{
@@ -141,7 +151,7 @@ namespace seneca
 		}
 
 
-		if (index != -1)
+		if (index != m_count)
 		{
 			Character** temp = new Character * [m_count - 1];
 
@@ -176,7 +186,7 @@ namespace seneca
 			cout << "[Team] " << m_name << endl;
 			for (size_t i = 0; i < m_count; i++)
 			{
-				cout << i + 1 << ": " << *m_member[i] << endl;
+				cout << setw(4) << "" << i + 1 << ": " << *m_member[i] << endl;
 			}
 
 		}

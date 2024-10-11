@@ -24,8 +24,8 @@ namespace seneca
 	template<typename T, typename Ability_t, typename Weapon_t>
 	class Barbarian : public CharacterTpl<T>
 	{
-		int m_baseDefense;
 		int m_baseAttack;
+		int m_baseDefense;
 		Ability_t m_ability;
 		Weapon_t m_weapon[2];
 
@@ -50,7 +50,8 @@ namespace seneca
 	{
 		int firstWeaponDamage = static_cast<double>(m_weapon[0]);
 		int secondWeaponDamage = static_cast<double>(m_weapon[1]);
-		int damage = m_baseAttack + (firstWeaponDamage / 2) + (secondWeaponDamage / 2);
+		int damage = static_cast<int>(m_baseAttack + (firstWeaponDamage / 2.0) + (secondWeaponDamage / 2.0));
+
 
 		return damage;
 	}
