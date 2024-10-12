@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="mailServer.cpp" />
     <ClCompile Include="message.cpp" />
     <ClCompile Include="plugin.cpp" />
     <ClCompile Include="spamFilterPlugin.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="verifyIdentityPlugin.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="mailServer.h" />
     <ClInclude Include="message.h" />
     <ClInclude Include="plugin.h" />
     <ClInclude Include="spamFilterPlugin.h" />

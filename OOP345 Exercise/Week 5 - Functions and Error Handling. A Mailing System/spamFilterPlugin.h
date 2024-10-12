@@ -8,7 +8,14 @@ namespace seneca
 {
 	class SpamFilterPlugin : public Plugin
 	{
+		std::string m_spam[10];
+		size_t m_count{ 0 };
+		size_t m_spamCount{ 0 };
 
+	public:
+		SpamFilterPlugin(const char* filename);
+		void operator()(Message& msg);
+		void showStats() const;
 	};
 
 }
