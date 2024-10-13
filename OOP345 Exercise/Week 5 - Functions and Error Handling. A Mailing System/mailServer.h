@@ -3,6 +3,8 @@
 #include <string>
 #include "message.h"
 #include "plugin.h"
+#include "spamFilterPlugin.h"
+#include "verifyIdentityPlugin.h"
 
 namespace seneca
 {
@@ -28,7 +30,7 @@ namespace seneca
 
 		void receiveMail(Message msg);
 		void addPlugin(Plugin* thePlugin);
-		void setObserver(void(*observer)(const Message&));
+		void setObserver(Observer_pfn ptr);
 		Message& operator[](size_t idx);
 		size_t getInboxSize();
 		void showInbox();

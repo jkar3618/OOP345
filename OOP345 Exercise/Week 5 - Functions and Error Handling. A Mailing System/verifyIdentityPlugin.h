@@ -2,6 +2,7 @@
 #define SENECA_VERIFYIDENTITYPLUGIN_H
 #include <string>
 #include "plugin.h"
+#include "message.h"
 
 
 namespace seneca
@@ -10,7 +11,7 @@ namespace seneca
 	class VerifyIdentityPlugin : public Plugin
 	{
 		std::string m_trust[10];
-		size_t m_count{ 0 };
+		size_t m_cnt{ 0 };
 
 	public:
 		VerifyIdentityPlugin(const char* filename);
