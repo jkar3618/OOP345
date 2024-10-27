@@ -1,2 +1,22 @@
-﻿  Template.cpp
-  Midterm.vcxproj -> C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\x64\Debug\Midterm.exe
+﻿  debuging main.cpp
+  main.cpp
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\A.h(22,23): error C7592: a non-type template-parameter of type 'double' requires at least '/std:c++20'
+  (compiling source file 'debuging%20main.cpp')
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\A.h(22,23): error C7592: a non-type template-parameter of type 'double' requires at least '/std:c++20'
+  (compiling source file 'main.cpp')
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\main.cpp(10,33): error C2078: too many initializers
+  mid.cpp
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\main.cpp(23,13): error C2672: 'process': no matching overloaded function found
+  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\A.h(23,3):
+  could be 'T process(const T *)'
+  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\main.cpp(23,13):
+  	'T process(const T *)': could not deduce template argument for 'N'
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\mid.cpp(21,3): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\mid.cpp(58,4): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\mid.cpp(99,1): error C1004: unexpected end-of-file found
+  programming.cpp
+  Template.cpp
+  Generating Code...
