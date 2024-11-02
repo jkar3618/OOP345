@@ -1,2 +1,11 @@
-﻿  odd.cpp
-  vector example.vcxproj -> C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\x64\Debug\vector example.exe
+﻿  deque.cpp
+  list.cpp
+  odd.cpp
+  queue.cpp
+  stack.cpp
+  Generating Code...
+list.obj : error LNK2005: main already defined in deque.obj
+odd.obj : error LNK2005: main already defined in deque.obj
+queue.obj : error LNK2005: main already defined in deque.obj
+stack.obj : error LNK2005: main already defined in deque.obj
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\x64\Debug\vector example.exe : fatal error LNK1169: one or more multiply defined symbols found

@@ -1,0 +1,30 @@
+﻿  Directory.cpp
+  File.cpp
+  Filesystem.cpp
+  Flags.cpp
+  tester_1.cpp
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(56,55): error C2440: 'initializing': cannot convert from 'const char [17]' to 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(56,55): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(70,34): error C2440: 'initializing': cannot convert from 'char *' to 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(70,34): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(77,41): error C2039: 'get_current_directory': is not a member of 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\Filesystem.h(6): message : see declaration of 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(89,26): error C2039: 'change_directory': is not a member of 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\Filesystem.h(6): message : see declaration of 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(95,22): error C2039: 'change_directory': is not a member of 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\Filesystem.h(6): message : see declaration of 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(126,73): error C2665: 'seneca::Directory::Directory': none of the 3 overloads could convert all the argument types
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\Directory.h(30,3): message : could be 'seneca::Directory::Directory(seneca::Directory &&)'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\Directory.h(28,3): message : or       'seneca::Directory::Directory(const seneca::Directory &)'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\Directory.h(15,3): message : or       'seneca::Directory::Directory(std::string &)'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(126,58): message : 'seneca::Directory::Directory(std::string &)': cannot convert argument 1 from 'const char [12]' to 'std::string &'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\Directory.h(15,3): message : see declaration of 'seneca::Directory::Directory'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(126,73): message : while trying to match the argument list '(const char [12])'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(133,22): error C2039: 'change_directory': is not a member of 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\Filesystem.h(6): message : see declaration of 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(134,22): error C2039: 'change_directory': is not a member of 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\Filesystem.h(6): message : see declaration of 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\tester_1.cpp(148,22): error C2039: 'change_directory': is not a member of 'seneca::Filesystem'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\Filesystem.h(6): message : see declaration of 'seneca::Filesystem'
+  Generating Code...
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 6 - STL Containers. A Filesystem Simulation\Directory.cpp(58): error C4716: 'seneca::Directory::operator+=': must return a value

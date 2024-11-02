@@ -13,7 +13,6 @@ namespace seneca
 		m_name = fname;
 	}
 
-
 	
 	void File::update_parent_path(const std::string& parentPath)
 	{

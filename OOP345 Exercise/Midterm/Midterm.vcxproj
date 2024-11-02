@@ -134,7 +134,9 @@
     <ClCompile Include="Template.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="A.h" />
+    <ClInclude Include="A.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

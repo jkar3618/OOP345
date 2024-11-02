@@ -1,1 +1,8 @@
-﻿
+﻿  mailServer.cpp
+  message.cpp
+  plugin.cpp
+  spamFilterPlugin.cpp
+  tester_1.cpp
+  verifyIdentityPlugin.cpp
+  Generating Code...
+  Week 5 - Functions and Error Handling. A Mailing System.vcxproj -> C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\x64\Debug\Week 5 - Functions and Error Handling. A Mailing System.exe
