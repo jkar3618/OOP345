@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "Project1\Projec
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithms Example", "Algorithms Example\Algorithms Example.vcxproj", "{EDDE383B-42B0-472A-8CC5-5332430B7129}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 8 - STL Algorithms. A Collection of Songs", "Week 8 - STL Algorithms. A Collection of Songs\Week 8 - STL Algorithms. A Collection of Songs.vcxproj", "{13307D7D-4FBB-4027-82ED-0301554C72AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{EDDE383B-42B0-472A-8CC5-5332430B7129}.Release|x64.Build.0 = Release|x64
 		{EDDE383B-42B0-472A-8CC5-5332430B7129}.Release|x86.ActiveCfg = Release|Win32
 		{EDDE383B-42B0-472A-8CC5-5332430B7129}.Release|x86.Build.0 = Release|Win32
+		{13307D7D-4FBB-4027-82ED-0301554C72AA}.Debug|x64.ActiveCfg = Debug|x64
+		{13307D7D-4FBB-4027-82ED-0301554C72AA}.Debug|x64.Build.0 = Debug|x64
+		{13307D7D-4FBB-4027-82ED-0301554C72AA}.Debug|x86.ActiveCfg = Debug|Win32
+		{13307D7D-4FBB-4027-82ED-0301554C72AA}.Debug|x86.Build.0 = Debug|Win32
+		{13307D7D-4FBB-4027-82ED-0301554C72AA}.Release|x64.ActiveCfg = Release|x64
+		{13307D7D-4FBB-4027-82ED-0301554C72AA}.Release|x64.Build.0 = Release|x64
+		{13307D7D-4FBB-4027-82ED-0301554C72AA}.Release|x86.ActiveCfg = Release|Win32
+		{13307D7D-4FBB-4027-82ED-0301554C72AA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
