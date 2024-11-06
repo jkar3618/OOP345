@@ -56,13 +56,14 @@ namespace seneca
 	
 	bool SongCollection::inCollection(const std::string src) const
 	{
-		return false;
+		std::any_of(m_song.begin(), m_song.end(), [src](const Song& origin) {return origin.m_artist == src; });
 	}
 	
 	std::list<Song> SongCollection::getSongsForArtist(const std::string& src) const
 	{
 		return std::list<Song>();
 	}
+
 	std::ostream& operator<<(std::ostream& out, const Song& theSong)
 	{
 		// TODO: insert return statement here
