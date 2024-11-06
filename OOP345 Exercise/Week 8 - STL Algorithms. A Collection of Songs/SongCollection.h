@@ -23,12 +23,12 @@ namespace seneca
 		size_t m_total{ 0 };
 
 	public:
-		SongCollection(const std::string fname);
+		SongCollection(const std::string& fname);
 		void display(std::ostream& out) const;
 		void sort(std::string src);
 		void cleanAlbum();
 		bool inCollection(const std::string src) const;
-		std::list<Song> getSongsForArtist(const std::string src) const;
+		std::list<Song> getSongsForArtist(const std::string& src) const;
 	};
 
 	std::ostream& operator<<(std::ostream& out, const Song& theSong);

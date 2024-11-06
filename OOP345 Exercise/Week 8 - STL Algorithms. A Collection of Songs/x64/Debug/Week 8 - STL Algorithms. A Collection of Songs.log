@@ -1,0 +1,4 @@
+﻿  SongCollection.cpp
+  tester_1.cpp
+  Generating Code...
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 8 - STL Algorithms. A Collection of Songs\SongCollection.cpp(39,1): error C4716: 'seneca::operator<<': must return a value
