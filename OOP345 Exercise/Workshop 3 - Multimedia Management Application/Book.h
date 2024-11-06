@@ -10,7 +10,9 @@ namespace seneca
 	{
 		std::string m_author{};
 		std::string m_country{};
-		double price{};
+		double m_price{};
+
+		Book(const string& author, const string& title, const string& country, double price, unsigned short year, const string& summary);
 
 	public:
 		void display(std::ostream& out) const override;
