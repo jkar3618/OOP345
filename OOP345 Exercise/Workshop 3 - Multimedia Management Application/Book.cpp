@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
+#include <iomanip>
 #include "Book.h"
 #include "Settings.h"
 
@@ -12,7 +13,9 @@ namespace seneca {
     Book::Book(const string& author, const string& title, const string& country, double price, unsigned short year, const string& summary) : MediaItem(title, summary, year), m_author(author), m_country(country), m_price(price)
     {    }
 
-    void display(std::ostream& out) const
+
+
+    void Book::display(std::ostream& out) const
     {
         if (g_settings.m_tableView)
         {
@@ -50,7 +53,7 @@ namespace seneca {
         }
     }
 
-	Book* Book::createItem(const std::string& strBook)
+    Book* Book::createItem(const std::string& strBook)
 	{
         std::string tokens[6]{};
 
