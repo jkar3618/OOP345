@@ -21,10 +21,10 @@ namespace seneca {
     };
 
     class TvShow : public MediaItem {
-        unsigned int m_id;
+        int m_id;
         std::vector<TvEpisode> m_episodes;
 
-        TvShow(unsigned int id, const std::string& title, unsigned short year, const std::string& summary);
+        TvShow(int id, const std::string& title, unsigned short year, const std::string& summary);
 
     public:
         void display(std::ostream& out) const override;

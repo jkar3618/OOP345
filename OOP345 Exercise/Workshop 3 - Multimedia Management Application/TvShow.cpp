@@ -9,7 +9,7 @@ using namespace std;
 
 namespace seneca
 {
-    TvShow::TvShow(unsigned int id, const std::string& title, unsigned short year, const std::string& summary) : MediaItem(title, summary, year), m_id(id) {}
+    TvShow::TvShow(int id, const std::string& title, unsigned short year, const std::string& summary) : MediaItem(title, summary, year), m_id(id) {}
 
     void TvShow::display(std::ostream& out) const
     {
@@ -83,7 +83,7 @@ namespace seneca
             MediaItem::trim(tokens[idx]);
         };
 
-        TvShow* temp = new TvShow{tokens[0], tokens[1], tokens[2], std::stoi(tokens[3])};
+        TvShow* temp = new TvShow{ std::stoi(tokens[0]), tokens[1], static_cast<unsigned short>(std::stoi(tokens[2])), tokens[3] };
 
 		return temp;
 	}
