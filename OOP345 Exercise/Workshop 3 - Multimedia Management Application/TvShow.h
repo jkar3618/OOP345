@@ -21,10 +21,10 @@ namespace seneca {
     };
 
     class TvShow : public MediaItem {
-        std::string m_id;
+        unsigned int m_id;
         std::vector<TvEpisode> m_episodes;
 
-        TvShow(const std::string& id, const std::string& title, int year, const std::string& summary);
+        TvShow(unsigned int id, const std::string& title, unsigned short year, const std::string& summary);
 
     public:
         void display(std::ostream& out) const override;
@@ -36,6 +36,10 @@ namespace seneca {
         double getEpisodeAverageLength() const;
         std::list<std::string> getLongEpisodes() const;
     };
+    template<typename Collection_t>
+    inline void TvShow::addEpisode(Collection_t& col, const std::string& strEpisode)
+    {
+    }
 }
 #endif
 

@@ -27,5 +27,13 @@ namespace seneca
 		}
 	}
 
+	void SpellChecker::operator()(std::string& text)
+	{
+	}
+
+	void SpellChecker::showStatistics(std::ostream& out) const
+	{
+	}
+
 
 }

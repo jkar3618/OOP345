@@ -73,6 +73,6 @@ namespace seneca {
 
         Book* temp = new Book{tokens[0], tokens[1], tokens[2], std::stod(tokens[3]), std::stoi(tokens[4]), tokens[5]};
 
-		return ;
+		return temp;
 	}
 }
