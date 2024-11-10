@@ -1,0 +1,11 @@
+﻿  Database.cpp
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(32,8): error C2059: syntax error: ':'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(37): message : see reference to class template instantiation 'seneca::Database<T>' being compiled
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(32,1): error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(37,2): fatal  error C1903: unable to recover from previous error(s); stopping compilation
+  tester_1.cpp
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\database.h(32,8): error C2059: syntax error: ':'
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\database.h(37): message : see reference to class template instantiation 'seneca::Database<T>' being compiled
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\database.h(32,1): error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\database.h(37,2): fatal  error C1903: unable to recover from previous error(s); stopping compilation
+  Generating Code...
