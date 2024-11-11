@@ -86,6 +86,7 @@ namespace seneca
 
 	std::ostream& operator<<(std::ostream& out, const Collection& collection)
 	{
+		return out;
 		// TODO: insert return statement here
 	}
 

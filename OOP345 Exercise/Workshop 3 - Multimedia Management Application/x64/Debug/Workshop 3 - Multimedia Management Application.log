@@ -1,11 +1,8 @@
 ﻿  Book.cpp
-  Collection.cpp
 C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\Book.cpp(74,95): error C2398: Element '5': conversion from 'int' to 'unsigned short' requires a narrowing conversion
-  MediaItem.cpp
   Movie.cpp
 C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\Movie.cpp(70,59): error C2398: Element '3': conversion from 'int' to 'unsigned short' requires a narrowing conversion
   Settings.cpp
-  SpellChecker.cpp
   tester_1.cpp
 C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(13,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
   (compiling source file 'tester_1.cpp')
@@ -13,7 +10,7 @@ C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Manag
 C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(13,21): error C2143: syntax error: missing ';' before '*'
   (compiling source file 'tester_1.cpp')
   
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(13,29): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(13,29): error C2238: unexpected token(s) preceding ';'
   (compiling source file 'tester_1.cpp')
   
 C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tester_1.cpp(280,20): error C2352: 'seneca::TvShow::addEpisode': a call of a non-static member function requires an object
@@ -27,8 +24,7 @@ C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Manag
 C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\TvShow.h(13,21): error C2143: syntax error: missing ';' before '*'
   (compiling source file 'TvShow.cpp')
   
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\TvShow.h(13,29): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\TvShow.h(13,29): error C2238: unexpected token(s) preceding ';'
   (compiling source file 'TvShow.cpp')
   
   Generating Code...
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\Collection.cpp(80,1): error C4716: 'seneca::operator<<': must return a value
