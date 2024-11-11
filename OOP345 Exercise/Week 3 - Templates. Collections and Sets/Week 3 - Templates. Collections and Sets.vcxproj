@@ -127,12 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Collection.h" />
+    <ClInclude Include="Collection.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="Pair.h" />
     <ClInclude Include="Set.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Collection.cpp" />
+    <ClCompile Include="Collection.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Pair.cpp" />
     <ClCompile Include="tester_1.cpp" />
   </ItemGroup>

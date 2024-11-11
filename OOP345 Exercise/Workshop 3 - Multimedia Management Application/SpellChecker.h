@@ -5,15 +5,16 @@
 #include <string>
 
 namespace seneca {
-    class SpellChecker {
-        std::string m_badWord[6];
-        std::string m_goodWord[6];
+	class SpellChecker {
+		std::string m_badWord[6];
+		std::string m_goodWord[6];
+		int m_count[6]{ 0 };
 
-    public:
-        SpellChecker(const char* filename);
-        void operator()(std::string& text);
-        void showStatistics(std::ostream& out) const;
-    };
+	public:
+		SpellChecker(const char* filename);
+		void operator()(std::string& text);
+		void showStatistics(std::ostream& out) const;
+	};
 }
 
 #endif
