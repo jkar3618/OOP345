@@ -3,13 +3,16 @@
 #include <iomanip>
 #include <algorithm>
 #include <numeric>
-#include "TvShow.h"
+#include <list>
+#include "tvShow.h"
+#include "settings.h"
+
 
 using namespace std;
 
 namespace seneca
 {
-    TvShow::TvShow(int id, const std::string& title, unsigned short year, const std::string& summary) : MediaItem(title, summary, year), m_id(id) {}
+    TvShow::TvShow(const std::string& id, const std::string& title, unsigned short year, const std::string& summary) : MediaItem(title, summary, year), m_id(id) {}
 
     void TvShow::display(std::ostream& out) const
     {
@@ -65,48 +68,53 @@ namespace seneca
         }
     }
 
-	TvShow* TvShow::createItem(const std::string& strShow)
-	{
+    TvShow* TvShow::createItem(const std::string& strShow)
+    {
         std::string tokens[4]{};
 
         if (strShow[0] == '#' || strShow.empty())
         {
-            throw "Not a valid book.";
+            throw "Not a valid show.";
         }
 
         std::stringstream ss(strShow);
         std::string empty;
         size_t idx{ 0 };
 
-        while (std::getline(ss, tokens[idx++], ','))
+        while (std::getline(ss, tokens[idx], ',') && idx < 4)
         {
             MediaItem::trim(tokens[idx]);
+            idx++;
         };
 
-        TvShow* temp = new TvShow{ std::stoi(tokens[0]), tokens[1], static_cast<unsigned short>(std::stoi(tokens[2])), tokens[3] };
+        TvShow* temp = new TvShow(tokens[0], tokens[1], static_cast<unsigned short>(std::stoi(tokens[2])), tokens[3]);
 
-		return temp;
-	}
+        return temp;
+    }
 
-	double TvShow::getEpisodeAverageLength() const
-	{
-        double totalLen{0.0};
-
-        return std::accumulate(m_episodes.begin(), m_episodes.end(), (int)0, [&](double total, const TvEpisode& ep) 
+    double TvShow::getEpisodeAverageLength() const
+    {
+        return std::accumulate(m_episodes.begin(), m_episodes.end(), (double)0,
+            [&](double total, const TvEpisode& ep)
             {
-                return totalLen + ep.m_length;
-            });
-	}
+                return total + ep.m_length;
+            }) / m_episodes.size();
 
-	std::list<std::string> TvShow::getLongEpisodes() const
-	{
+    }
+
+    std::list<std::string> TvShow::getLongEpisodes() const
+    {
         std::list<std::string> longEpisode;
 
-        std::copy_if(m_episodes.begin(), m_episodes.end(), std::back_inserter(longEpisode), [](const TvEpisode& ep)
+        std::for_each(m_episodes.begin(), m_episodes.end(), [&](const TvEpisode& episode)
             {
-                return ep.m_length >= 3600;
+                if (episode.m_length >= 3600)
+                {
+                    longEpisode.push_back(episode.m_title);
+                }
             });
+        return longEpisode;
+    }
 
-		return longEpisode;
-	}
+
 }

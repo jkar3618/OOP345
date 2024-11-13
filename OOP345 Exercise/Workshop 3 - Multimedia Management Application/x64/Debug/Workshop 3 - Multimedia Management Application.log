@@ -1,30 +1,19 @@
 ﻿  Book.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\Book.cpp(74,95): error C2398: Element '5': conversion from 'int' to 'unsigned short' requires a narrowing conversion
+  Collection.cpp
+  MediaItem.cpp
   Movie.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\Movie.cpp(70,59): error C2398: Element '3': conversion from 'int' to 'unsigned short' requires a narrowing conversion
   Settings.cpp
+  SpellChecker.cpp
   tester_1.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(13,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'tester_1.cpp')
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(13,21): error C2143: syntax error: missing ';' before '*'
-  (compiling source file 'tester_1.cpp')
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(13,29): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'tester_1.cpp')
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tester_1.cpp(280,20): error C2352: 'seneca::TvShow::addEpisode': a call of a non-static member function requires an object
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(40,25):
-  see declaration of 'seneca::TvShow::addEpisode'
-  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(86,50): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tester_1.cpp(280): message : see reference to function template instantiation 'void seneca::TvShow::addEpisode<seneca::Collection>(Collection_t &,const std::string &)' being compiled
+          with
+          [
+              Collection_t=seneca::Collection
+          ]
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(87,34): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(88,28): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(88,61): warning C4838: conversion from 'int' to 'unsigned int' requires a narrowing conversion
   TvShow.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\TvShow.h(13,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'TvShow.cpp')
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\TvShow.h(13,21): error C2143: syntax error: missing ';' before '*'
-  (compiling source file 'TvShow.cpp')
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\TvShow.h(13,29): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'TvShow.cpp')
-  
   Generating Code...
+  Workshop 3 - Multimedia Management Application.vcxproj -> C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\x64\Debug\Workshop 3 - Multimedia Management Application.exe

@@ -4,8 +4,8 @@
 #include <vector>
 #include <sstream>
 #include <iomanip>
-#include "Settings.h"
-#include "Movie.h"
+#include "settings.h"
+#include "movie.h"
 
 using namespace std;
 
@@ -62,12 +62,12 @@ namespace seneca
 		std::string empty;
 		size_t idx{ 0 };
 
-		while (std::getline(ss, tokens[idx++], ','))
+		while (std::getline(ss, tokens[idx++], ',') && idx < 3)
 		{
 			MediaItem::trim(tokens[idx]);
 		}
 
-		Movie* temp = new Movie{ tokens[0], tokens[1], std::stoi(tokens[2]) };
+		Movie* temp = new Movie{ tokens[0], tokens[1], static_cast<unsigned short>(std::stoi(tokens[2])) };
 
 		return temp;
 	}

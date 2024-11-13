@@ -2,7 +2,7 @@
 #define SENECA_BOOK_H
 #include <iostream>
 #include <string>
-#include "MediaItem.h"
+#include "mediaItem.h"
 
 namespace seneca
 {
@@ -16,7 +16,7 @@ namespace seneca
 
 	public:
 		void display(std::ostream& out) const override;
-		Book* createItem(const std::string& strBook);
+		static Book* createItem(const std::string& strBook);
 
 	};
 

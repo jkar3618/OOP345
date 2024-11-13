@@ -1,7 +1,7 @@
 #ifndef SENECA_MOVIE_H
 #define SENECA_MOVIE_H
 #include <string>
-#include "MediaItem.h"
+#include "mediaItem.h"
 
 namespace seneca
 {

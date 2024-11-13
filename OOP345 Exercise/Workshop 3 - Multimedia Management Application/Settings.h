@@ -6,9 +6,9 @@ namespace seneca
 	struct Settings
 	{
 		int m_maxSummaryWidth{ 80 };
-		bool m_tableView{false};
-	}; 
-	
+		bool m_tableView{ false };
+	};
+
 	extern Settings g_settings;
 }
 

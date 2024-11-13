@@ -9,8 +9,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 1 - Across Translation
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Workshop 1 - Dictionary", "Workshop 1 - Dictionary\Workshop 1 - Dictionary.vcxproj", "{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 3 - Templates. Collections and Sets", "Week 3 - Templates. Collections and Sets\Week 3 - Templates. Collections and Sets.vcxproj", "{91B5EF4A-FA51-4A06-A277-68BA28D97D9A}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 4 - Type Relations. A Shopping Cart for Toys", "Week 4 - Type Relations. A Shopping Cart for Toys\Week 4 - Type Relations. A Shopping Cart for Toys.vcxproj", "{868C52AA-569C-4112-BFBD-D317108AF66D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Workshop 2 - RPG Game", "Workshop 2 - RPG Game\Workshop 2 - RPG Game.vcxproj", "{F5935E51-5DEE-401E-A866-C73B45815E98}"
@@ -67,14 +65,6 @@ Global
 		{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}.Release|x64.Build.0 = Release|x64
 		{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}.Release|x86.ActiveCfg = Release|Win32
 		{0E07D65C-39AB-4913-B9C3-63FB22ECE2B9}.Release|x86.Build.0 = Release|Win32
-		{91B5EF4A-FA51-4A06-A277-68BA28D97D9A}.Debug|x64.ActiveCfg = Debug|x64
-		{91B5EF4A-FA51-4A06-A277-68BA28D97D9A}.Debug|x64.Build.0 = Debug|x64
-		{91B5EF4A-FA51-4A06-A277-68BA28D97D9A}.Debug|x86.ActiveCfg = Debug|Win32
-		{91B5EF4A-FA51-4A06-A277-68BA28D97D9A}.Debug|x86.Build.0 = Debug|Win32
-		{91B5EF4A-FA51-4A06-A277-68BA28D97D9A}.Release|x64.ActiveCfg = Release|x64
-		{91B5EF4A-FA51-4A06-A277-68BA28D97D9A}.Release|x64.Build.0 = Release|x64
-		{91B5EF4A-FA51-4A06-A277-68BA28D97D9A}.Release|x86.ActiveCfg = Release|Win32
-		{91B5EF4A-FA51-4A06-A277-68BA28D97D9A}.Release|x86.Build.0 = Release|Win32
 		{868C52AA-569C-4112-BFBD-D317108AF66D}.Debug|x64.ActiveCfg = Debug|x64
 		{868C52AA-569C-4112-BFBD-D317108AF66D}.Debug|x64.Build.0 = Debug|x64
 		{868C52AA-569C-4112-BFBD-D317108AF66D}.Debug|x86.ActiveCfg = Debug|Win32

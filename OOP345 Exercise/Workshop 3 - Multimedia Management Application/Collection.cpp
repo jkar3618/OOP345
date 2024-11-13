@@ -1,6 +1,6 @@
 #include <iostream>
 #include <algorithm>
-#include "Collection.h"
+#include "collection.h"
 
 namespace seneca
 {
@@ -64,28 +64,84 @@ namespace seneca
 
 	MediaItem* Collection::operator[](const std::string& title) const
 	{
+		MediaItem* result = nullptr;
+
 		auto address = std::find_if(m_item.begin(), m_item.end(), [&title](const MediaItem* item)
 			{
 				return item->getTitle() == title;
 			});
 
-		return (address != m_item.end() ? *address : nullptr);
+		if (address != m_item.end())
+		{
+			result = *address;
+		}
+
+		return result;
 	}
 
 	void Collection::removeQuotes()
 	{
+		std::for_each(m_item.begin(), m_item.end(), [](MediaItem* item)
+			{
+				std::string title, summary;
+				title = item->getTitle();
+				summary = item->getSummary();
 
+				if (title.front() == '"' && title.back() == '"')
+				{
+					item->setTitle(title.substr(1, title.size() - 2));
+				}
+				if (summary.front() == '"' && summary.back() == '"')
+				{
+					item->setSummary(summary.substr(1, summary.size() - 2));
+				}
+
+			});
+
+		//std::transform(m_item.begin(), m_item.end(), m_item.begin(), [](MediaItem* item)
+		//	{
+		//		std::string title, summary;
+		//		title = item->getTitle();
+		//		summary = item->getSummary();
+
+		//		if (title.front() == '"' && title.back() == '"')
+		//		{
+		//			item->setTitle(title.substr(1, title.size() - 2));
+		//		}
+		//		if (summary.front() == '"' && summary.back() == '"')
+		//		{
+		//			item->setSummary(summary.substr(1, summary.size() - 2));
+		//		}
+		//		return item;
+		//	});
 	}
 
 	void Collection::sort(const std::string& field)
 	{
+		std::sort(m_item.begin(), m_item.end(), [field](const MediaItem* m1, const MediaItem* m2)
+			{
+				bool result = false;
+				if (field == "Title")
+				{
+					result = m1->getTitle() < m2->getTitle();
+
+				}
+				else if (field == "Year")
+				{
+					result = m1->getYear() < m2->getYear();
+				}
+				return result;
+			});
 	}
-
-
 
 
 	std::ostream& operator<<(std::ostream& out, const Collection& collection)
 	{
+
+		for (const auto& result : collection.m_item)
+		{
+			result->display(out);
+		}
 		return out;
 		// TODO: insert return statement here
 	}

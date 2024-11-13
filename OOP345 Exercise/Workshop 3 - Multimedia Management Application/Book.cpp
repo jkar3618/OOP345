@@ -3,8 +3,8 @@
 #include <vector>
 #include <sstream>
 #include <iomanip>
-#include "Book.h"
-#include "Settings.h"
+#include "book.h"
+#include "settings.h"
 
 using namespace std;
 
@@ -54,7 +54,7 @@ namespace seneca {
     }
 
     Book* Book::createItem(const std::string& strBook)
-	{
+    {
         std::string tokens[6]{};
 
         if (strBook[0] == '#' || strBook.empty())
@@ -64,15 +64,15 @@ namespace seneca {
 
         std::stringstream ss(strBook);
         std::string empty;
-        size_t idx{0};
+        size_t idx{ 0 };
 
-        while (std::getline(ss, tokens[idx++], ','))
+        while (std::getline(ss, tokens[idx++], ',') && idx < 6)
         {
             MediaItem::trim(tokens[idx]);
         };
 
-        Book* temp = new Book{tokens[0], tokens[1], tokens[2], std::stod(tokens[3]), std::stoi(tokens[4]), tokens[5]};
+        Book* temp = new Book{ tokens[0], tokens[1], tokens[2], std::stod(tokens[3]), static_cast<unsigned short>(std::stoi(tokens[4])), tokens[5] };
 
-		return temp;
-	}
+        return temp;
+    }
 }

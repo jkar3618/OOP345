@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip>
-#include "SpellChecker.h"
+#include "spellChecker.h"
 
 using namespace std;
 

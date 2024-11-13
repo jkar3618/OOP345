@@ -7,5 +7,7 @@ C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\main.cpp(23,27): erro
 C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\A.h(23,3): message : could be 'T process(const T *)'
 C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\main.cpp(23): message : 'T process(const T *)': could not deduce template argument for 'N'
 C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Midterm\A.h(23): message : see declaration of 'process'
+  mid.cpp
   programming.cpp
+  Template.cpp
   Generating Code...

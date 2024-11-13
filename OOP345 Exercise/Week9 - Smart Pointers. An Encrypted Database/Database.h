@@ -89,6 +89,13 @@ namespace seneca
 	{
 		const char secret[]{ "super secret encryption key" };
 
+		for (size_t& B : value)
+		{
+			for (const char& K : secret)
+			{
+				B = B ^ K;
+			}
+		}
 		foreach byte B in the parameter
 			foreach character K in the secret
 			B = B ^ K
