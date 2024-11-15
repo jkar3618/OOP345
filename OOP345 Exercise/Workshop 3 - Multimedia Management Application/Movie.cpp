@@ -51,20 +51,20 @@ namespace seneca
 
 	Movie* Movie::createItem(const std::string& strMovie)
 	{
-		std::string tokens[3]{};
-
 		if (strMovie[0] == '#' || strMovie.empty())
 		{
-			throw "Not a valid book.";
+			throw "Not a valid movie.";
 		}
 
+		std::string tokens[3]{};
 		std::stringstream ss(strMovie);
-		std::string empty;
+		std::string token;
 		size_t idx{ 0 };
 
 		while (std::getline(ss, tokens[idx++], ',') && idx < 3)
 		{
-			MediaItem::trim(tokens[idx]);
+			MediaItem::trim(token);
+			tokens[idx++] = token;
 		}
 
 		Movie* temp = new Movie{ tokens[0], tokens[1], static_cast<unsigned short>(std::stoi(tokens[2])) };

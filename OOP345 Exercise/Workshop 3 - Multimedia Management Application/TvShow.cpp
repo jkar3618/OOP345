@@ -3,6 +3,7 @@
 #include <iomanip>
 #include <algorithm>
 #include <numeric>
+#include <string>
 #include <list>
 #include "tvShow.h"
 #include "settings.h"
@@ -70,27 +71,28 @@ namespace seneca
 
     TvShow* TvShow::createItem(const std::string& strShow)
     {
-        std::string tokens[4]{};
-
+        // Check for comment line or empty string
         if (strShow[0] == '#' || strShow.empty())
-        {
             throw "Not a valid show.";
-        }
 
+        std::string tokens[4]{};
         std::stringstream ss(strShow);
-        std::string empty;
+        std::string token;
         size_t idx{ 0 };
 
-        while (std::getline(ss, tokens[idx], ',') && idx < 4)
+        // Read tokens from the string
+        while (std::getline(ss, token, ',') && idx < 4)
         {
-            MediaItem::trim(tokens[idx]);
-            idx++;
-        };
+            MediaItem::trim(token); // Remove spaces from token
+            tokens[idx++] = token;
+        }
 
         TvShow* temp = new TvShow(tokens[0], tokens[1], static_cast<unsigned short>(std::stoi(tokens[2])), tokens[3]);
 
+        // Create and return TvShow object
         return temp;
     }
+
 
     double TvShow::getEpisodeAverageLength() const
     {

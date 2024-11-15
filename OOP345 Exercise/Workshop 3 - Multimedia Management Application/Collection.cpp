@@ -66,7 +66,7 @@ namespace seneca
 	{
 		MediaItem* result = nullptr;
 
-		auto address = std::find_if(m_item.begin(), m_item.end(), [&title](const MediaItem* item)
+		auto address = std::find_if(m_item.begin(), m_item.end(), [title](const MediaItem* item)
 			{
 				return item->getTitle() == title;
 			});
@@ -83,37 +83,33 @@ namespace seneca
 	{
 		std::for_each(m_item.begin(), m_item.end(), [](MediaItem* item)
 			{
-				std::string title, summary;
-				title = item->getTitle();
-				summary = item->getSummary();
+				std::string title = item->getTitle();
+				std::string summary = item->getSummary();
 
-				if (title.front() == '"' && title.back() == '"')
+
+				if (!title.empty() && title.front() == '"')
 				{
-					item->setTitle(title.substr(1, title.size() - 2));
+					title.erase(0, 1);
 				}
-				if (summary.front() == '"' && summary.back() == '"')
+				if (!title.empty() && title.back() == '"')
 				{
-					item->setSummary(summary.substr(1, summary.size() - 2));
+					title.erase(title.size() - 1);
 				}
+
+				if (!summary.empty() && summary.front() == '"')
+				{
+					summary.erase(0, 1);
+				}
+				if (!summary.empty() && summary.back() == '"')
+				{
+					summary.erase(summary.size() - 1);
+				}
+				
+				item->setTitle(title);
+				item->setSummary(title);
 
 			});
 
-		//std::transform(m_item.begin(), m_item.end(), m_item.begin(), [](MediaItem* item)
-		//	{
-		//		std::string title, summary;
-		//		title = item->getTitle();
-		//		summary = item->getSummary();
-
-		//		if (title.front() == '"' && title.back() == '"')
-		//		{
-		//			item->setTitle(title.substr(1, title.size() - 2));
-		//		}
-		//		if (summary.front() == '"' && summary.back() == '"')
-		//		{
-		//			item->setSummary(summary.substr(1, summary.size() - 2));
-		//		}
-		//		return item;
-		//	});
 	}
 
 	void Collection::sort(const std::string& field)
