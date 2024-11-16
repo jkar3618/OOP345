@@ -30,7 +30,7 @@ namespace seneca
 		void encryptDecrypt(T& value);
 
 	pulbic:
-		std::shared_ptr<Database<T>> getInstance(const std::string& dbFileName);
+		static std::shared_ptr<Database<T>> getInstance(const std::string& dbFileName);
 		Err_Status GetValue(const std::string& key, T& value);
 		Err_Status SetValue(const std::string& key, const T& value);
 		~Database();
@@ -70,6 +70,50 @@ namespace seneca
 
 	}
 
+	template<typename T>
+	inline Err_Status Database<T>::GetValue(const std::string& key, T& value)
+	{
+		Err_Status result = Err_Status::Err_NotFound;
+
+		for (size_t i = 0; i < m_ent; i++)
+		{
+			if (m_key[i] == key)
+			{
+				value = m_value[i];
+				result = Err_Status::Err_Success;
+			}
+		}
+
+		return result;
+	}
+
+	template<typename T>
+	inline Err_Status Database<T>::SetValue(const std::string& key, const T& value)
+	{
+		Err_Status result;
+
+		std::string newKey = key;
+
+		if (m_ent < 20)
+		{
+
+		std::replace(newKey.begin(), newKey.end(), '_', ' ');
+		m_key[m_ent] = newKey;
+		m_value[m_ent] = value;
+		m_ent++;
+		result = Err_Status::Err_Success;
+
+		}
+		else
+		{
+			result = Err_Status::Err_OutOfMemory;
+		}
+
+		return result;
+	}
+
+
+
 	template <>
 	void Database<std::string>::encryptDecrypt(std::string& value)
 	{
@@ -88,18 +132,45 @@ namespace seneca
 	void Database<long long>::encryptDecrypt(long long& value)
 	{
 		const char secret[]{ "super secret encryption key" };
+		char* byte = (reinterpret_cast<char*>(&value));
+		size_t nByte = sizeof(long long);
 
-		for (size_t& B : value)
+
+		for (const char& B : secret)
 		{
 			for (const char& K : secret)
 			{
 				B = B ^ K;
 			}
 		}
-		foreach byte B in the parameter
-			foreach character K in the secret
-			B = B ^ K
+
 	}
+	
+	template<typename T>
+	static std::shared_ptr<Database<T>> getInstance(const std::string& dbFileName) 
+	{
+		if (m_instance == nullptr)
+		{
+			m_instance = std::shared_ptr<Database<T>>(new Database<T>(dbFileName));
+		}
+
+		return m_instance;
+	}
+	template <typename T>
+	Database<T>::~Database()
+	{
+		std::string backUp = m_filename + ".bkp.txt";
+		std::ofstream file(backUp, std::ios::binary);
+
+		for (size_t i = 0; i < m_ent; i++)
+		{
+			T value = m_value[i];
+			encryptDecrypt(value);
+
+			file << std::setw(25) << std::left << m_key[i] << "-> " << value << std::endl;
+		}
+	}
+
 
 
 }

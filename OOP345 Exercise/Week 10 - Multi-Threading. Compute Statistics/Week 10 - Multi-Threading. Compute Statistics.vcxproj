@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d7ea117a-bfe8-4be5-9a7d-f225de0a1023}</ProjectGuid>
-    <RootNamespace>Week9SmartPointersAnEncryptedDatabase</RootNamespace>
+    <ProjectGuid>{62415455-1c3b-4ebc-be11-740edb3a1ead}</ProjectGuid>
+    <RootNamespace>Week10MultiThreadingComputeStatistics</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Week 9 - Smart Pointers. An Encrypted Database</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,11 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Database.h" />
+    <ClCompile Include="ProcessData.cpp" />
+    <ClCompile Include="tester_1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Database.cpp" />
-    <ClCompile Include="tester_1.cpp" />
+    <ClInclude Include="ProcessData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
