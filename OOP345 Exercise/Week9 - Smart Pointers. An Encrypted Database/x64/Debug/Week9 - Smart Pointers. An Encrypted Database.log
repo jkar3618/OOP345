@@ -1,8 +1,30 @@
-﻿  Database.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(32,8): error C2059: syntax error: ':'
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(37): message : see reference to class template instantiation 'seneca::Database<T>' being compiled
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(32,1): error C2334: unexpected token(s) preceding ':'; skipping apparent function body
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(37,2): fatal  error C1903: unable to recover from previous error(s); stopping compilation
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Week9 - Smart Pointers. An Encrypted Database.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Database.cpp
   tester_1.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\tester_1.cpp : fatal  error C1041: cannot open program database 'C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\x64\Debug\vc143.pdb'; if multiple CL.EXE write to the same .PDB file, please use /FS
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(32,8): error C2059: syntax error: ':'
+  (compiling source file '../Week9%20-%20Smart%20Pointers.%20An%20Encrypted%20Database/Database.cpp')
+  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(32,8):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(21,8):
+  	while compiling class template 'seneca::Database'
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(32,8): error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+  (compiling source file '../Week9%20-%20Smart%20Pointers.%20An%20Encrypted%20Database/Database.cpp')
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\Database.h(37,2): error C1903: unable to recover from previous error(s); stopping compilation
+  (compiling source file '../Week9%20-%20Smart%20Pointers.%20An%20Encrypted%20Database/Database.cpp')
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\database.h(32,8): error C2059: syntax error: ':'
+  (compiling source file '../Week9%20-%20Smart%20Pointers.%20An%20Encrypted%20Database/tester_1.cpp')
+  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\database.h(32,8):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\database.h(21,8):
+  	while compiling class template 'seneca::Database'
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\database.h(32,8): error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+  (compiling source file '../Week9%20-%20Smart%20Pointers.%20An%20Encrypted%20Database/tester_1.cpp')
+  
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week9 - Smart Pointers. An Encrypted Database\database.h(37,2): error C1903: unable to recover from previous error(s); stopping compilation
+  (compiling source file '../Week9%20-%20Smart%20Pointers.%20An%20Encrypted%20Database/tester_1.cpp')
+  
   Generating Code...

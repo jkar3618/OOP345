@@ -18,48 +18,48 @@
     <ClCompile Include="tester_1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MediaItem.cpp">
+    <ClCompile Include="mediaItem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Book.cpp">
+    <ClCompile Include="book.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Movie.cpp">
+    <ClCompile Include="movie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TvShow.cpp">
+    <ClCompile Include="tvShow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Settings.cpp">
+    <ClCompile Include="settings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SpellChecker.cpp">
+    <ClCompile Include="spellChecker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Collection.cpp">
+    <ClCompile Include="collection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MediaItem.h">
+    <ClInclude Include="mediaItem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Book.h">
+    <ClInclude Include="book.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Movie.h">
+    <ClInclude Include="movie.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TvShow.h">
+    <ClInclude Include="tvShow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Settings.h">
+    <ClInclude Include="settings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SpellChecker.h">
+    <ClInclude Include="spellChecker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Collection.h">
+    <ClInclude Include="collection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

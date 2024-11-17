@@ -1,11 +1,2 @@
-﻿  tester_1.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(86,50): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tester_1.cpp(280): message : see reference to function template instantiation 'void seneca::TvShow::addEpisode<seneca::Collection>(Collection_t &,const std::string &)' being compiled
-          with
-          [
-              Collection_t=seneca::Collection
-          ]
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(87,34): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(88,28): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 3 - Multimedia Management Application\tvShow.h(88,61): warning C4838: conversion from 'int' to 'unsigned int' requires a narrowing conversion
+﻿  tvShow.cpp
   Workshop 3 - Multimedia Management Application.vcxproj -> C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\x64\Debug\Workshop 3 - Multimedia Management Application.exe

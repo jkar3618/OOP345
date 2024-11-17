@@ -1,3 +1,14 @@
+//*****************************************************************************
+//<assessment name : Workshop - #3>
+//  Full Name : Taehwa Hong
+//  Student ID# : 132546227
+//	Email : thong14@myseneca.ca
+//	Section : OOP345 NDD
+//	Authenticity Declaration :
+//I declare this submission is the result of my own work and has not been
+//shared with any other student or 3rd party content provider.This submitted
+//piece of work is entirely of my own creation.
+//* ****************************************************************************
 #include <iostream>
 #include <sstream>
 #include <iomanip>
@@ -13,6 +24,7 @@ using namespace std;
 
 namespace seneca
 {
+    // Constructor
     TvShow::TvShow(const std::string& id, const std::string& title, unsigned short year, const std::string& summary) : MediaItem(title, summary, year), m_id(id) {}
 
     void TvShow::display(std::ostream& out) const
@@ -69,31 +81,41 @@ namespace seneca
         }
     }
 
+    // Create new TvShow object dynamically
     TvShow* TvShow::createItem(const std::string& strShow)
     {
-        // Check for comment line or empty string
-        if (strShow[0] == '#' || strShow.empty())
-            throw "Not a valid show.";
-
-        std::string tokens[4]{};
-        std::stringstream ss(strShow);
-        std::string token;
-        size_t idx{ 0 };
-
-        // Read tokens from the string
-        while (std::getline(ss, token, ',') && idx < 4)
+        if (strShow.empty() || strShow[0] == '#')
         {
-            MediaItem::trim(token); // Remove spaces from token
+            throw "Not a valid show.";
+        }
+
+        std::istringstream iss(strShow);
+        std::string token;
+        std::string tokens[4];
+        size_t idx = 0;
+
+        while (idx < 3 && std::getline(iss, token, ','))
+        {
+            MediaItem::trim(token);
             tokens[idx++] = token;
         }
 
-        TvShow* temp = new TvShow(tokens[0], tokens[1], static_cast<unsigned short>(std::stoi(tokens[2])), tokens[3]);
+        std::getline(iss, tokens[idx]);
+        MediaItem::trim(tokens[idx]);
+        idx++;
 
-        // Create and return TvShow object
-        return temp;
+        if (idx != 4)
+        {
+            throw "Not a valid show.";
+        }
+
+        // id, title, year, summary
+        return new TvShow(tokens[0], tokens[1], std::stoi(tokens[2]), tokens[3]);
     }
 
 
+
+    // Return average length of episodes
     double TvShow::getEpisodeAverageLength() const
     {
         return std::accumulate(m_episodes.begin(), m_episodes.end(), (double)0,
@@ -104,6 +126,9 @@ namespace seneca
 
     }
 
+
+
+    // Return list of titles of episodes
     std::list<std::string> TvShow::getLongEpisodes() const
     {
         std::list<std::string> longEpisode;

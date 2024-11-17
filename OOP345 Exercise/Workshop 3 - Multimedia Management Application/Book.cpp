@@ -1,3 +1,15 @@
+//*****************************************************************************
+//<assessment name : Workshop - #3>
+//  Full Name : Taehwa Hong
+//  Student ID# : 132546227
+//	Email : thong14@myseneca.ca
+//	Section : OOP345 NDD
+//	Authenticity Declaration :
+//I declare this submission is the result of my own work and has not been
+//shared with any other student or 3rd party content provider.This submitted
+//piece of work is entirely of my own creation.
+//* ****************************************************************************
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -10,7 +22,8 @@ using namespace std;
 
 namespace seneca {
 
-    Book::Book(const string& author, const string& title, const string& country, double price, unsigned short year, const string& summary) : MediaItem(title, summary, year), m_author(author), m_country(country), m_price(price)
+    // Constructor
+    Book::Book(const std::string& author, const std::string& title, const std::string& country, unsigned short year, double price, const std::string& summary) : MediaItem(title, summary, year), m_author(author), m_country(country), m_price(price)
     {    }
 
 
@@ -53,26 +66,36 @@ namespace seneca {
         }
     }
 
+    // Create Book object dynamically
     Book* Book::createItem(const std::string& strBook)
     {
-        std::string tokens[6]{};
-
-        if (strBook[0] == '#' || strBook.empty())
+        if (strBook.empty() || strBook[0] == '#')
         {
             throw "Not a valid book.";
         }
 
-        std::stringstream ss(strBook);
-        std::string empty;
-        size_t idx{ 0 };
+        std::istringstream iss(strBook);
+        std::string token;
+        std::string tokens[6];
+        size_t idx = 0;
 
-        while (std::getline(ss, tokens[idx++], ',') && idx < 6)
+        while (idx < 5 && std::getline(iss, token, ','))
         {
-            MediaItem::trim(tokens[idx]);
-        };
+            MediaItem::trim(token);
+            tokens[idx++] = token;
+        }
 
-        Book* temp = new Book{ tokens[0], tokens[1], tokens[2], std::stod(tokens[3]), static_cast<unsigned short>(std::stoi(tokens[4])), tokens[5] };
+        std::getline(iss, tokens[idx]);
+        MediaItem::trim(tokens[idx]);
+        idx++;
 
-        return temp;
+        if (idx != 6)
+        {
+            throw "Not a valid book.";
+        }
+
+
+        return new Book(tokens[0], tokens[1], tokens[2], static_cast<unsigned short>(std::stoi(tokens[4])), std::stod(tokens[3]), tokens[5]);
     }
+
 }

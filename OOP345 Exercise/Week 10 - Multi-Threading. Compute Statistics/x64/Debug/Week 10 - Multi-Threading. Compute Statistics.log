@@ -1,0 +1,5 @@
+﻿  ProcessData.cpp
+  tester_1.cpp
+  Generating Code...
+tester_1.obj : error LNK2019: unresolved external symbol "public: int __cdecl seneca::ProcessData::operator()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,double &,double &)" (??RProcessData@seneca@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAN1@Z) referenced in function main
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\x64\Debug\Week 10 - Multi-Threading. Compute Statistics.exe : fatal error LNK1120: 1 unresolved externals

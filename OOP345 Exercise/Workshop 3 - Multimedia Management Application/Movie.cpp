@@ -1,3 +1,15 @@
+//*****************************************************************************
+//<assessment name : Workshop - #3>
+//  Full Name : Taehwa Hong
+//  Student ID# : 132546227
+//	Email : thong14@myseneca.ca
+//	Section : OOP345 NDD
+//	Authenticity Declaration :
+//I declare this submission is the result of my own work and has not been
+//shared with any other student or 3rd party content provider.This submitted
+//piece of work is entirely of my own creation.
+//* ****************************************************************************
+
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -11,7 +23,8 @@ using namespace std;
 
 namespace seneca
 {
-	Movie::Movie(const std::string& title, const std::string& summary, unsigned short year) : MediaItem(title, summary, year) {	}
+	// Constructor
+	Movie::Movie(const std::string& title, unsigned short year, const std::string& summary) : MediaItem(title, summary, year) {	}
 
 	void Movie::display(std::ostream& out) const
 	{
@@ -49,26 +62,37 @@ namespace seneca
 		}
 	}
 
+	// Create Movie object dynamically
 	Movie* Movie::createItem(const std::string& strMovie)
 	{
-		if (strMovie[0] == '#' || strMovie.empty())
+		if (strMovie.empty() || strMovie[0] == '#')
 		{
 			throw "Not a valid movie.";
 		}
 
-		std::string tokens[3]{};
-		std::stringstream ss(strMovie);
+		std::istringstream iss(strMovie);
+		std::string title, yearStr, summary;
 		std::string token;
-		size_t idx{ 0 };
+		std::string tokens[3];
+		size_t idx = 0;
 
-		while (std::getline(ss, tokens[idx++], ',') && idx < 3)
+		while (idx < 2 && std::getline(iss, token, ','))
 		{
 			MediaItem::trim(token);
 			tokens[idx++] = token;
 		}
 
-		Movie* temp = new Movie{ tokens[0], tokens[1], static_cast<unsigned short>(std::stoi(tokens[2])) };
+		std::getline(iss, tokens[idx]);
+		MediaItem::trim(tokens[idx]);
+		idx++;
 
-		return temp;
+		if (idx != 3)
+		{
+			throw "Not a valid movie.";
+		}
+
+		// title, year, summary
+		return new Movie(tokens[0], std::stoi(tokens[1]), tokens[2]);
 	}
+
 }

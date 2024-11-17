@@ -127,23 +127,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Book.cpp" />
-    <ClCompile Include="Collection.cpp" />
-    <ClCompile Include="MediaItem.cpp" />
-    <ClCompile Include="Movie.cpp" />
-    <ClCompile Include="Settings.cpp" />
-    <ClCompile Include="SpellChecker.cpp" />
+    <ClCompile Include="book.cpp" />
+    <ClCompile Include="collection.cpp" />
+    <ClCompile Include="mediaItem.cpp" />
+    <ClCompile Include="movie.cpp" />
+    <ClCompile Include="settings.cpp" />
+    <ClCompile Include="spellChecker.cpp" />
     <ClCompile Include="tester_1.cpp" />
-    <ClCompile Include="TvShow.cpp" />
+    <ClCompile Include="tvShow.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Book.h" />
-    <ClInclude Include="Collection.h" />
-    <ClInclude Include="MediaItem.h" />
-    <ClInclude Include="Movie.h" />
-    <ClInclude Include="Settings.h" />
-    <ClInclude Include="SpellChecker.h" />
-    <ClInclude Include="TvShow.h" />
+    <ClInclude Include="book.h" />
+    <ClInclude Include="collection.h" />
+    <ClInclude Include="mediaItem.h" />
+    <ClInclude Include="movie.h" />
+    <ClInclude Include="settings.h" />
+    <ClInclude Include="spellChecker.h" />
+    <ClInclude Include="tvShow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
