@@ -42,8 +42,10 @@ namespace seneca
 	}
 
 	ProcessData::operator bool() const {
-		return total_items > 0 && data != nullptr && num_threads>0 && averages && variances && p_indices;
+		return total_items > 0 && data != nullptr && num_threads > 0 && averages && variances && p_indices;
 	}
+
+
 
 	// The following constructor of the functor receives name of the data file, opens it in 
 	//   binary mode for reading, reads first int data as total_items, allocate memory space 
@@ -55,21 +57,33 @@ namespace seneca
 		//         memory for "data".
 		//       The file is binary and has the format described in the specs.
 
+		std::ifstream file(filename, std::ios::binary);
+
+		if (!file)
+		{
+			throw "Error";
+		}
+
+		file.read(reinterpret_cast<char*>(&total_items), sizeof(total_items));
+
+		data = new int[total_items];
+
+		file.read(reinterpret_cast<char*>(data), sizeof(int) * total_items);
+		file.close();
 
 
-
-		std::cout << "Item's count in file '"<< filename << "': " << total_items << std::endl;
+		std::cout << "Item's count in file '" << filename << "': " << total_items << std::endl;
 		std::cout << "  [" << data[0] << ", " << data[1] << ", " << data[2] << ", ... , "
-		          << data[total_items - 3] << ", " << data[total_items - 2] << ", "
-		          << data[total_items - 1] << "]\n";
+			<< data[total_items - 3] << ", " << data[total_items - 2] << ", "
+			<< data[total_items - 1] << "]\n";
 
 		// Following statements initialize the variables added for multi-threaded 
 		//   computation
-		num_threads = n_threads; 
+		num_threads = n_threads;
 		averages = new double[num_threads] {};
 		variances = new double[num_threads] {};
-		p_indices = new int[num_threads+1] {};
-		for (int i = 0; i < num_threads+1; i++)
+		p_indices = new int[num_threads + 1] {};
+		for (int i = 0; i < num_threads + 1; i++)
 			p_indices[i] = i * (total_items / num_threads);
 	}
 
@@ -92,7 +106,87 @@ namespace seneca
 	// Save the data into a file with filename held by the argument `target_file`.
 	// Also, read the workshop instruction.
 
+	int ProcessData::operator()(const std::string& target_file, double& avg, double& var)
+	{
+		int result = -1;
 
+		if (*this)
+		{
+			result = 0;
+
+			if (num_threads == 1)
+			{
+				computeAvgFactor(data, total_items, total_items, avg);
+				computeVarFactor(data, total_items, total_items, avg, var);
+			}
+			else
+			{
+				auto avgBind = std::bind(computeAvgFactor, std::placeholders::_1, std::placeholders::_2, total_items, std::placeholders::_3);
+
+				std::vector<std::thread> threads;
+				for (size_t i = 0; i < num_threads; i++)
+				{
+					int start = p_indices[i];
+					int size = p_indices[i + 1] - start;
+					const int* arr = data + start;
+
+
+					threads.push_back(std::thread(avgBind, arr, size, std::ref(averages[i])));
+
+				}
+				for (auto& index : threads)
+				{
+					index.join();
+				}
+
+				avg = 0.0;
+				for (size_t i = 0; i < num_threads; i++)
+				{
+					avg += averages[i];
+				}
+				threads.clear();
+
+				auto varBind = std::bind(computeVarFactor, std::placeholders::_1, std::placeholders::_2, total_items, avg, std::placeholders::_3);
+
+				for (size_t i = 0; i < num_threads; i++)
+				{
+					int start = p_indices[i];
+					int size = p_indices[i + 1] - start;
+					const int* arr = data + start;
+
+
+					threads.push_back(std::thread(varBind, arr, size, std::ref(variances[i])));
+				}
+
+				for (auto& index : threads)
+				{
+					index.join();
+				}
+				var = 0.0;
+
+				for (size_t i = 0; i < num_threads; i++)
+				{
+					var += variances[i];
+				}
+			}
+
+			std::ofstream file(target_file, std::ios::binary);
+
+			if (!file)
+			{
+				result = -1;
+			}
+			else
+			{
+				file.write(reinterpret_cast<char*>(&total_items), sizeof(int));
+				file.write(reinterpret_cast<char*>(data), sizeof(int) * total_items);
+			}
+
+			file.close();
+
+		}
+		return result;
+	}
 
 
 }
