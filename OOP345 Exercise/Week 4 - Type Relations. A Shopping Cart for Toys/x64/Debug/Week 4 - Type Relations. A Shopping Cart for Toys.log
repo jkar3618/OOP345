@@ -1,11 +1,1 @@
-﻿  confirmationOrder.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 4 - Type Relations. A Shopping Cart for Toys\confirmationOrder.cpp(70,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 4 - Type Relations. A Shopping Cart for Toys\confirmationOrder.cpp(102,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  shoppingCart.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 4 - Type Relations. A Shopping Cart for Toys\shoppingCart.cpp(11,17): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  tester_1.cpp
-  toy.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 4 - Type Relations. A Shopping Cart for Toys\toy.cpp(31,4): error C2166: l-value specifies const object
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 4 - Type Relations. A Shopping Cart for Toys\toy.cpp(45,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 4 - Type Relations. A Shopping Cart for Toys\toy.cpp(46,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
+﻿

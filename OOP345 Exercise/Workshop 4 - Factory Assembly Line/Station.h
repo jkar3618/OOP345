@@ -9,7 +9,7 @@ namespace seneca
 		int m_id{};
 		std::string m_name{};
 		std::string m_desc{};
-		unsigned int m_nextSerial{};
+		unsigned int m_serial{};
 		size_t m_stock{};
 
 		static size_t m_widthField;

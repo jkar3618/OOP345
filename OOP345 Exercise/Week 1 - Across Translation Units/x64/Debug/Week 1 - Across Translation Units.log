@@ -1,5 +1,1 @@
-﻿  FoodOrder.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 1 - Across Translation Units\FoodOrder.cpp(106,23): warning C4806: '==': unsafe operation: no value of type 'const bool' promoted to type 'char' can equal the given constant
-  tester_1.cpp
-  Generating Code...
-  Week 1 - Across Translation Units.vcxproj -> C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\x64\Debug\Week 1 - Across Translation Units.exe
+﻿

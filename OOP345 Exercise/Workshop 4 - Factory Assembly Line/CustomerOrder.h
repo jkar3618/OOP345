@@ -1,5 +1,5 @@
-#ifndef CUSTOMERORDER_H
-#define CUSTOMERORDER_H
+#ifndef SENECA_CUSTOMERORDER_H
+#define SENECA_CUSTOMERORDER_H
 
 #include <iostream>
 #include <string>
@@ -18,18 +18,19 @@ namespace seneca
             Item(const std::string& src) : m_itemName(src) {}
         };
 
-        std::string m_name;          // Customer's name
-        std::string m_product;       // Product being assembled
-        size_t m_cntItem{ 0 };       // Number of items in the order
-        Item** m_lstItem{ nullptr }; // Dynamically allocated array of items
-        static size_t m_widthField;  // Maximum width for item name
+        std::string m_name;
+        std::string m_product;
+        size_t m_cntItem{ 0 };
+        Item** m_lstItem{ nullptr };
+        static size_t m_widthField;
 
     public:
+        CustomerOrder() {};
         CustomerOrder(const std::string& record);
-        CustomerOrder(const CustomerOrder&) = delete; 
-        CustomerOrder& operator=(const CustomerOrder&) = delete; 
-        CustomerOrder(CustomerOrder&&) noexcept;
-        CustomerOrder& operator=(CustomerOrder&&) noexcept;
+        CustomerOrder(const CustomerOrder& src); 
+        CustomerOrder& operator=(const CustomerOrder& src) = delete; 
+        CustomerOrder(CustomerOrder&& src) noexcept;
+        CustomerOrder& operator=(CustomerOrder&& src) noexcept;
         ~CustomerOrder();
 
         bool isOrderFilled() const;
@@ -37,8 +38,6 @@ namespace seneca
         void fillItem(Station& station, std::ostream& os);
         void display(std::ostream& os) const;
 
-        static void setWidthField(size_t width);
-        static size_t getWidthField();
     };
 }
 

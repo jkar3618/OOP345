@@ -1,16 +1,1 @@
-﻿  SongCollection.cpp
-  tester_1.cpp
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 8 - STL Algorithms. A Collection of Songs\SongCollection.cpp(54,21): warning C4838: conversion from 'int' to 'double' requires a narrowing conversion
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 8 - STL Algorithms. A Collection of Songs\SongCollection.cpp(56,21): warning C4838: conversion from 'double' to 'size_t' requires a narrowing conversion
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 8 - STL Algorithms. A Collection of Songs\SongCollection.cpp(56,21): warning C4244: 'initializing': conversion from 'double' to 'size_t', possible loss of data
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 8 - STL Algorithms. A Collection of Songs\SongCollection.cpp(127,34): error C2511: 'std::list<seneca::Song,std::allocator<seneca::Song>> seneca::SongCollection::getSongsForArtist(const std::string) const': overloaded member function not found in 'seneca::SongCollection'
-  C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 8 - STL Algorithms. A Collection of Songs\SongCollection.h(20,8):
-  see declaration of 'seneca::SongCollection'
-  
-C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 8 - STL Algorithms. A Collection of Songs\SongCollection.cpp(131,8): error C2672: 'std::copy_if': no matching overloaded function found
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\algorithm(1426,21):
-  could be '_OutIt std::copy_if(_InIt,_InIt,_OutIt,_Pr)'
-  	C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Week 8 - STL Algorithms. A Collection of Songs\SongCollection.cpp(131,8):
-  	'_OutIt std::copy_if(_InIt,_InIt,_OutIt,_Pr)': expects 4 arguments - 3 provided
-  
-  Generating Code...
+﻿
