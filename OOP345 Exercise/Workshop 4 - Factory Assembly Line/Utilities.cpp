@@ -1,37 +1,50 @@
 #include <iostream>
+#include <sstream>
+#include <algorithm>
 #include "Utilities.h"
 
 namespace seneca
 {
-	Utilities::Utilities()
-	{
-	}
-
-	Utilities::~Utilities()
-	{
-	}
+	char Utilities::m_delimiter = ',';
 
 	void Utilities::setFieldWidth(size_t newWidth)
 	{
+		m_widthField = newWidth;
 	}
 
 	size_t Utilities::getFieldWidth() const
 	{
-		return size_t();
+		return m_widthField;
 	}
 
 	std::string Utilities::extractToken(const std::string& str, size_t& next_pos, bool& more)
 	{
+		if (next_pos >= str.length())
+		{
+			more = false;
+		}
+
+		size_t delimiter = str.find(m_delimiter, next_pos);
+
+		if (delimiter == next_pos)
+		{
+			more = false;
+			throw "No token until delimiter";
+		}
+
+		std::string token;
+
+
 		return std::string();
 	}
 
-	static void setDelimiter(char newDelimiter)
+	void Utilities::setDelimiter(char newDelimiter)
 	{
-
+		m_delimiter = newDelimiter;
 	}
 
-	static char getDelimiter()
+	char Utilities::getDelimiter()
 	{
-
+		return m_delimiter;
 	}
 }

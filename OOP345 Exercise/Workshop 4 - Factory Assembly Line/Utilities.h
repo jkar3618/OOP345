@@ -6,12 +6,9 @@ namespace seneca
 	class Utilities
 	{
 		size_t m_widthField{ 1 };
-		static  std::string m_delimiter;
+		static char m_delimiter;
 
 	public:
-		Utilities();
-		~Utilities();
-
 		// sets the field width of the current object to the value of parameter newWidth
 		void setFieldWidth(size_t newWidth);
 
