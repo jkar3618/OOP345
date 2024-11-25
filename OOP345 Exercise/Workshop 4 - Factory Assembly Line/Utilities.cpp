@@ -46,9 +46,6 @@ namespace seneca
 
 		m_widthField = (m_widthField < token.size()) ? token.size() : m_widthField;
 
-
-
-
 		return token;
 	}
 

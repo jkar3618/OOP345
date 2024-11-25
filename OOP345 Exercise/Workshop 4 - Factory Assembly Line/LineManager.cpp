@@ -3,17 +3,11 @@
 
 namespace seneca
 {
-	LineManager::LineManager()
-	{
-	}
-
 	LineManager::LineManager(const std::string& file, const std::vector<Workstation*>& stations)
 	{
+
 	}
 
-	LineManager::~LineManager()
-	{
-	}
 
 	void LineManager::reorderStations()
 	{

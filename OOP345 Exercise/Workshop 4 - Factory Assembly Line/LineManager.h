@@ -15,9 +15,7 @@ namespace seneca
 		Workstation* m_firstStation;
 
 	public:
-		LineManager();
 		LineManager(const std::string& file, const std::vector<Workstation*>& stations);
-		~LineManager();
 
 		void reorderStations();
 		bool run(std::ostream& os);

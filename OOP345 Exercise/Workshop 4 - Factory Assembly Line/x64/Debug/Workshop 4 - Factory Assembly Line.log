@@ -1,2 +1,9 @@
 ﻿  CustomerOrder.cpp
-  Workshop 4 - Factory Assembly Line.vcxproj -> C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\x64\Debug\Workshop 4 - Factory Assembly Line.exe
+  LineManager.cpp
+  Station.cpp
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 4 - Factory Assembly Line\Station.cpp(33,10): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  tester_3.cpp
+  Utilities.cpp
+  Workstation.cpp
+  Generating Code...
+C:\Users\jkar3\source\repos\OOP345\OOP345 Exercise\Workshop 4 - Factory Assembly Line\Workstation.cpp(40,1): error C4716: 'seneca::Workstation::operator+=': must return a value

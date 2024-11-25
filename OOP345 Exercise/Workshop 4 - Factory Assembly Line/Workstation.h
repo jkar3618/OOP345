@@ -17,11 +17,9 @@ namespace seneca
 		Workstation* m_pNextStation{ nullptr };
 
 	public:
-		Workstation() = default;
 		Workstation(const std::string& src);
 		~Workstation() = default;
 
-		
 		void fill(std::ostream& os);
 		bool attemptToMoveOrder();
 		void setNextStation(Workstation* station);
