@@ -31,11 +31,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Workshop 3 - Multimedia Man
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pointer example", "pointer example\pointer example.vcxproj", "{CAF7A1FB-63DE-4B7D-B72B-849BBFA1EB42}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 9 - Smart Pointers. An Encrypted Database", "Week9 - Smart Pointers. An Encrypted Database\Week9 - Smart Pointers. An Encrypted Database.vcxproj", "{D7EA117A-BFE8-4BE5-9A7D-F225DE0A1023}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 10 - Multi-Threading. Compute Statistics", "Week 10 - Multi-Threading. Compute Statistics\Week 10 - Multi-Threading. Compute Statistics.vcxproj", "{62415455-1C3B-4EBC-BE11-740EDB3A1EAD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Workshop 4 - Factory Assembly Line", "Workshop 4 - Factory Assembly Line\Workshop 4 - Factory Assembly Line.vcxproj", "{769DD47D-318D-4BCC-8637-3D4989C602E4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 9 - Smart Pointers. An Encrypted Database", "Week 9 - Smart Pointers. An Encrypted Database\Week 9 - Smart Pointers. An Encrypted Database.vcxproj", "{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,14 +157,6 @@ Global
 		{CAF7A1FB-63DE-4B7D-B72B-849BBFA1EB42}.Release|x64.Build.0 = Release|x64
 		{CAF7A1FB-63DE-4B7D-B72B-849BBFA1EB42}.Release|x86.ActiveCfg = Release|Win32
 		{CAF7A1FB-63DE-4B7D-B72B-849BBFA1EB42}.Release|x86.Build.0 = Release|Win32
-		{D7EA117A-BFE8-4BE5-9A7D-F225DE0A1023}.Debug|x64.ActiveCfg = Debug|x64
-		{D7EA117A-BFE8-4BE5-9A7D-F225DE0A1023}.Debug|x64.Build.0 = Debug|x64
-		{D7EA117A-BFE8-4BE5-9A7D-F225DE0A1023}.Debug|x86.ActiveCfg = Debug|Win32
-		{D7EA117A-BFE8-4BE5-9A7D-F225DE0A1023}.Debug|x86.Build.0 = Debug|Win32
-		{D7EA117A-BFE8-4BE5-9A7D-F225DE0A1023}.Release|x64.ActiveCfg = Release|x64
-		{D7EA117A-BFE8-4BE5-9A7D-F225DE0A1023}.Release|x64.Build.0 = Release|x64
-		{D7EA117A-BFE8-4BE5-9A7D-F225DE0A1023}.Release|x86.ActiveCfg = Release|Win32
-		{D7EA117A-BFE8-4BE5-9A7D-F225DE0A1023}.Release|x86.Build.0 = Release|Win32
 		{62415455-1C3B-4EBC-BE11-740EDB3A1EAD}.Debug|x64.ActiveCfg = Debug|x64
 		{62415455-1C3B-4EBC-BE11-740EDB3A1EAD}.Debug|x64.Build.0 = Debug|x64
 		{62415455-1C3B-4EBC-BE11-740EDB3A1EAD}.Debug|x86.ActiveCfg = Debug|Win32
@@ -181,6 +173,14 @@ Global
 		{769DD47D-318D-4BCC-8637-3D4989C602E4}.Release|x64.Build.0 = Release|x64
 		{769DD47D-318D-4BCC-8637-3D4989C602E4}.Release|x86.ActiveCfg = Release|Win32
 		{769DD47D-318D-4BCC-8637-3D4989C602E4}.Release|x86.Build.0 = Release|Win32
+		{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}.Debug|x64.ActiveCfg = Debug|x64
+		{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}.Debug|x64.Build.0 = Debug|x64
+		{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}.Debug|x86.ActiveCfg = Debug|Win32
+		{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}.Debug|x86.Build.0 = Debug|Win32
+		{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}.Release|x64.ActiveCfg = Release|x64
+		{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}.Release|x64.Build.0 = Release|x64
+		{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}.Release|x86.ActiveCfg = Release|Win32
+		{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

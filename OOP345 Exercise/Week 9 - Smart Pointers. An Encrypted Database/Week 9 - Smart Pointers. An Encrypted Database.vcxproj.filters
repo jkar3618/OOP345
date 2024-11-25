@@ -15,10 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="data_num.txt" />
-    <Text Include="data_str.txt" />
-    <Text Include="sample_output_run_1.txt" />
-    <Text Include="sample_output_run_2.txt" />
+    <Text Include="sample_output_run_2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="data_num.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="data_str.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="sample_output_run_1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Database.cpp">
