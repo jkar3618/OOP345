@@ -29,7 +29,7 @@ namespace seneca
 	public:
 		Station();
 		Station(const std::string& record);
-		~Station();
+		virtual ~Station();
 
 		// returns the name of the current Station object
 		const std::string& getItemName() const;

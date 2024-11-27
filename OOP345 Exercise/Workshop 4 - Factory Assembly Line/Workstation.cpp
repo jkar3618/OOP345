@@ -29,16 +29,27 @@ namespace seneca
 	{
 		bool result = false;
 
-		if (!m_orders.empty())
+
+		if (!m_orders.empty() || m_orders.front().isItemFilled(getItemName()) || !getQuantity())
 		{
-			if (m_orders.front().isItemFilled(getItemName()) || !getQuantity())
+			if (m_pNextStation)
 			{
-				if (m_pNextStation)
+				*m_pNextStation += std::move(m_orders.front());
+			}
+			else
+			{
+				if (m_orders.front().isOrderFilled())
 				{
-					*m_pNextStation += std::move(m_orders.front());
-					result = true;
+					g_completed.push_back(m_orders.front());
+
+				}
+				else
+				{
+					g_incomplete.push_back(m_orders.front());
 				}
 			}
+			m_orders.pop_front();
+			result = true;
 		}
 
 		return result;
