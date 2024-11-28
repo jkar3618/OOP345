@@ -30,7 +30,7 @@ namespace seneca
 		bool result = false;
 
 
-		if (!m_orders.empty() || m_orders.front().isItemFilled(getItemName()) || !getQuantity())
+		if (!m_orders.empty() && (m_orders.front().isItemFilled(getItemName()) || !getQuantity()))
 		{
 			if (m_pNextStation)
 			{
@@ -40,12 +40,12 @@ namespace seneca
 			{
 				if (m_orders.front().isOrderFilled())
 				{
-					g_completed.push_back(m_orders.front());
+					g_completed.push_back(std::move(m_orders.front()));
 
 				}
 				else
 				{
-					g_incomplete.push_back(m_orders.front());
+					g_incomplete.push_back(std::move(m_orders.front()));
 				}
 			}
 			m_orders.pop_front();
@@ -67,7 +67,7 @@ namespace seneca
 
 	void Workstation::display(std::ostream& os) const
 	{
-		os << getItemName() << " --> " << (m_pNextStation ? m_pNextStation->getItemName() : "End of Line.") << '\n';
+		os << getItemName() << " --> " << (m_pNextStation != nullptr ? m_pNextStation->getItemName() : "End of Line.") << '\n';
 	}
 
 	Workstation& Workstation::operator+=(CustomerOrder&& newOrder)
