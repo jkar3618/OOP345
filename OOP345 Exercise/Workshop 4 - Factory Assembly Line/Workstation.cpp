@@ -67,7 +67,7 @@ namespace seneca
 
 	void Workstation::display(std::ostream& os) const
 	{
-		os << getItemName() << " --> " << (m_pNextStation != nullptr ? m_pNextStation->getItemName() : "End of Line.") << '\n';
+		os << getItemName() << " --> " << (m_pNextStation != nullptr ? m_pNextStation->getItemName() : "End of Line") << '\n';
 	}
 
 	Workstation& Workstation::operator+=(CustomerOrder&& newOrder)
