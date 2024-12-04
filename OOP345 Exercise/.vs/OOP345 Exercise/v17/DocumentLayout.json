@@ -3,44 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Station.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|solutionrelative:Workshop 4 - Factory Assembly Line\\Station.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}|Final\\Final.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\sample.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}|Final\\Final.vcxproj|solutionrelative:Final\\sample.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\CustomerOrder.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|solutionrelative:Workshop 4 - Factory Assembly Line\\CustomerOrder.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}|Final\\Final.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\part 3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}|Final\\Final.vcxproj|solutionrelative:Final\\part 3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Workstation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|solutionrelative:Workshop 4 - Factory Assembly Line\\Workstation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}|Final\\Final.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\sample.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}|Final\\Final.vcxproj|solutionrelative:Final\\sample.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\LineManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|solutionrelative:Workshop 4 - Factory Assembly Line\\LineManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Utilities.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|solutionrelative:Workshop 4 - Factory Assembly Line\\Utilities.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|solutionrelative:Workshop 4 - Factory Assembly Line\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Station.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|solutionrelative:Workshop 4 - Factory Assembly Line\\Station.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\CustomerOrder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|solutionrelative:Workshop 4 - Factory Assembly Line\\CustomerOrder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Workstation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|solutionrelative:Workshop 4 - Factory Assembly Line\\Workstation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\LineManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{769DD47D-318D-4BCC-8637-3D4989C602E4}|Workshop 4 - Factory Assembly Line\\Workshop 4 - Factory Assembly Line.vcxproj|solutionrelative:Workshop 4 - Factory Assembly Line\\LineManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}|Final\\Final.vcxproj|C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}|Final\\Final.vcxproj|solutionrelative:Final\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,138 +26,64 @@
       "DocumentGroups": [
         {
           "DockedWidth": 165,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LineManager.h",
-              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\LineManager.h",
-              "RelativeDocumentMoniker": "Workshop 4 - Factory Assembly Line\\LineManager.h",
-              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\LineManager.h",
-              "RelativeToolTip": "Workshop 4 - Factory Assembly Line\\LineManager.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-20T02:43:20.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Workstation.h",
-              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Workstation.h",
-              "RelativeDocumentMoniker": "Workshop 4 - Factory Assembly Line\\Workstation.h",
-              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Workstation.h",
-              "RelativeToolTip": "Workshop 4 - Factory Assembly Line\\Workstation.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-20T02:43:09.477Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CustomerOrder.h",
-              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\CustomerOrder.h",
-              "RelativeDocumentMoniker": "Workshop 4 - Factory Assembly Line\\CustomerOrder.h",
-              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\CustomerOrder.h",
-              "RelativeToolTip": "Workshop 4 - Factory Assembly Line\\CustomerOrder.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-20T02:42:35.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Station.h",
-              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Station.h",
-              "RelativeDocumentMoniker": "Workshop 4 - Factory Assembly Line\\Station.h",
-              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Station.h",
-              "RelativeToolTip": "Workshop 4 - Factory Assembly Line\\Station.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-20T02:42:18.657Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Utilities.h",
-              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Utilities.h",
-              "RelativeDocumentMoniker": "Workshop 4 - Factory Assembly Line\\Utilities.h",
-              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Utilities.h",
-              "RelativeToolTip": "Workshop 4 - Factory Assembly Line\\Utilities.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-20T02:41:15.977Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 197,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Utilities.cpp",
-              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Utilities.cpp",
-              "RelativeDocumentMoniker": "Workshop 4 - Factory Assembly Line\\Utilities.cpp",
-              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Utilities.cpp",
-              "RelativeToolTip": "Workshop 4 - Factory Assembly Line\\Utilities.cpp",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAACgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-20T03:25:03.058Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Station.cpp",
-              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Station.cpp",
-              "RelativeDocumentMoniker": "Workshop 4 - Factory Assembly Line\\Station.cpp",
-              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Station.cpp",
-              "RelativeToolTip": "Workshop 4 - Factory Assembly Line\\Station.cpp",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAAAFIAAAALAAAA",
+              "Title": "sample.cpp",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\sample.cpp",
+              "RelativeDocumentMoniker": "Final\\sample.cpp",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\sample.cpp",
+              "RelativeToolTip": "Final\\sample.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-20T02:55:37.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LineManager.cpp",
-              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\LineManager.cpp",
-              "RelativeDocumentMoniker": "Workshop 4 - Factory Assembly Line\\LineManager.cpp",
-              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\LineManager.cpp",
-              "RelativeToolTip": "Workshop 4 - Factory Assembly Line\\LineManager.cpp",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAGYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-20T03:25:48.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustomerOrder.cpp",
-              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\CustomerOrder.cpp",
-              "RelativeDocumentMoniker": "Workshop 4 - Factory Assembly Line\\CustomerOrder.cpp",
-              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\CustomerOrder.cpp",
-              "RelativeToolTip": "Workshop 4 - Factory Assembly Line\\CustomerOrder.cpp",
-              "ViewState": "AQIAADgAAAAAAAAAAAAgwKUAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-20T03:25:50.902Z",
+              "WhenOpened": "2024-12-04T22:10:33.179Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Workstation.cpp",
-              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Workstation.cpp",
-              "RelativeDocumentMoniker": "Workshop 4 - Factory Assembly Line\\Workstation.cpp",
-              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Workshop 4 - Factory Assembly Line\\Workstation.cpp",
-              "RelativeToolTip": "Workshop 4 - Factory Assembly Line\\Workstation.cpp",
-              "ViewState": "AQIAADEAAAAAAAAAAAAgwBkAAAAAAAAA",
+              "Title": "sample.h",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\sample.h",
+              "RelativeDocumentMoniker": "Final\\sample.h",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\sample.h",
+              "RelativeToolTip": "Final\\sample.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-04T22:09:06.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "part 3.cpp",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\part 3.cpp",
+              "RelativeDocumentMoniker": "Final\\part 3.cpp",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\part 3.cpp",
+              "RelativeToolTip": "Final\\part 3.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-20T03:25:40.596Z",
+              "WhenOpened": "2024-12-04T21:49:06.566Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 165,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\main.cpp",
+              "RelativeDocumentMoniker": "Final\\main.cpp",
+              "ToolTip": "C:\\Users\\jkar3\\source\\repos\\OOP345\\OOP345 Exercise\\Final\\main.cpp",
+              "RelativeToolTip": "Final\\main.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-04T22:13:49.241Z",
               "EditorCaption": ""
             }
           ]

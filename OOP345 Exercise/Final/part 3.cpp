@@ -85,7 +85,8 @@ int main()
 	newWishList.push_back({ "Case", "NZXT H510", 100.0, 0.0, false });
 	newWishList.push_back({ "Cooling", "Corsair Hydro Series H100i", 120.0, 5.0, false });
 
-	std::merge(wishList.begin(), wishList.end(), newWishList.begin(), newWishList.end())
+	std::vector<ComputerParts> mergedList;
+	std::merge(wishList.begin(), wishList.end(), newWishList.begin(), newWishList.end(), std::back_inserter(mergedList));
 
 
 	//    std::cout <<
