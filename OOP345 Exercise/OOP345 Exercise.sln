@@ -37,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Workshop 4 - Factory Assemb
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 9 - Smart Pointers. An Encrypted Database", "Week 9 - Smart Pointers. An Encrypted Database\Week 9 - Smart Pointers. An Encrypted Database.vcxproj", "{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Final", "Final\Final.vcxproj", "{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -181,6 +183,14 @@ Global
 		{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}.Release|x64.Build.0 = Release|x64
 		{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}.Release|x86.ActiveCfg = Release|Win32
 		{0EBE0A32-4591-4591-8D81-36E60A1ECCA6}.Release|x86.Build.0 = Release|Win32
+		{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}.Debug|x64.ActiveCfg = Debug|x64
+		{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}.Debug|x64.Build.0 = Debug|x64
+		{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}.Debug|x86.ActiveCfg = Debug|Win32
+		{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}.Debug|x86.Build.0 = Debug|Win32
+		{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}.Release|x64.ActiveCfg = Release|x64
+		{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}.Release|x64.Build.0 = Release|x64
+		{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}.Release|x86.ActiveCfg = Release|Win32
+		{16CFACBA-FE5C-4056-8FB2-8D006E137CFE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
