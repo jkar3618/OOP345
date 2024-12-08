@@ -127,12 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="finalprac-q1.cpp" />
+    <ClCompile Include="finalprac-q2.cpp" />
+    <ClCompile Include="finalprac-q3.cpp" />
+    <ClCompile Include="finalprac-q3w.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="part 2.cpp" />
     <ClCompile Include="part 3.cpp" />
     <ClCompile Include="sample.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="finalprac-q3.h" />
     <ClInclude Include="sample.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

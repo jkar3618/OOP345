@@ -21,8 +21,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 6 - STL Containers. A 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector example", "vector example\vector example.vcxproj", "{83BE3CA8-F205-48D6-B24D-3F3337D5B102}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "Project1\Project1.vcxproj", "{462B9994-7E14-402E-9842-3361D3007C6E}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithms Example", "Algorithms Example\Algorithms Example.vcxproj", "{EDDE383B-42B0-472A-8CC5-5332430B7129}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 8 - STL Algorithms. A Collection of Songs", "Week 8 - STL Algorithms. A Collection of Songs\Week 8 - STL Algorithms. A Collection of Songs.vcxproj", "{13307D7D-4FBB-4027-82ED-0301554C72AA}"
@@ -119,14 +117,6 @@ Global
 		{83BE3CA8-F205-48D6-B24D-3F3337D5B102}.Release|x64.Build.0 = Release|x64
 		{83BE3CA8-F205-48D6-B24D-3F3337D5B102}.Release|x86.ActiveCfg = Release|Win32
 		{83BE3CA8-F205-48D6-B24D-3F3337D5B102}.Release|x86.Build.0 = Release|Win32
-		{462B9994-7E14-402E-9842-3361D3007C6E}.Debug|x64.ActiveCfg = Debug|x64
-		{462B9994-7E14-402E-9842-3361D3007C6E}.Debug|x64.Build.0 = Debug|x64
-		{462B9994-7E14-402E-9842-3361D3007C6E}.Debug|x86.ActiveCfg = Debug|Win32
-		{462B9994-7E14-402E-9842-3361D3007C6E}.Debug|x86.Build.0 = Debug|Win32
-		{462B9994-7E14-402E-9842-3361D3007C6E}.Release|x64.ActiveCfg = Release|x64
-		{462B9994-7E14-402E-9842-3361D3007C6E}.Release|x64.Build.0 = Release|x64
-		{462B9994-7E14-402E-9842-3361D3007C6E}.Release|x86.ActiveCfg = Release|Win32
-		{462B9994-7E14-402E-9842-3361D3007C6E}.Release|x86.Build.0 = Release|Win32
 		{EDDE383B-42B0-472A-8CC5-5332430B7129}.Debug|x64.ActiveCfg = Debug|x64
 		{EDDE383B-42B0-472A-8CC5-5332430B7129}.Debug|x64.Build.0 = Debug|x64
 		{EDDE383B-42B0-472A-8CC5-5332430B7129}.Debug|x86.ActiveCfg = Debug|Win32
