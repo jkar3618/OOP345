@@ -44,6 +44,72 @@ struct Toy
 */
 
 class ToyBox {
+	vector<unique_ptr<Toy>> m_toys;
+
+	ToyBox() = default;
+
+	ToyBox& operator+=(unique_ptr<Toy>& toy)
+	{
+		m_toys.push_back(toy);
+	}
+
+	ToyBox& operator-=(string name)
+	{
+		auto itr = remove_if(m_toys.begin(), m_toys.end(), [name](unique_ptr<Toy>& toy) {
+			return toy->name == name;
+			});
+
+		m_toys.erase(itr);
+
+		if (itr == m_toys.end())
+		{
+			throw string("None");
+		}
+	}
+
+	void fixAll()
+	{
+		auto fix = [](vector<unique_ptr<Toy>>& toy) {
+			for (auto& i : toy)
+			{
+				(*i).isBroken == false;
+				(*i).funLevel += 10;
+			}
+			};
+	}
+
+	void display() const
+	{
+		for (auto& i : m_toys)
+		{
+			cout << i->name << " | " << i->type << " | " << i->funLevel << " | " << i->isBroken << endl;
+		}
+	}
+
+	Toy& operator[](size_t index)
+	{
+		if (index > m_toys.size())
+		{
+			throw string("Error");
+		}
+
+		return *m_toys[index];
+	}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+class ToyBox {
 	//std::vector<Toy*> m_toys;
 	std::vector<unique_ptr<Toy>> m_toys;
 

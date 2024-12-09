@@ -5,6 +5,8 @@
 #include <numeric>
 #include <list>
 
+using namespace std;
+
 enum class BookGenre {
 	Fiction, NonFiction, Mystery, ScienceFiction
 };
@@ -39,32 +41,76 @@ This function performs the following tasks:
 
 */
 
-
-std::list<Book> compileReadingList(std::vector<Book>& b)
+list<Book> comileReadingList(vector<Book>& b)
 {
-	int cnt = std::count_if(b.begin(), b.end(), [](const Book& b) {
-		return b.author == "Agatha Christie" || b.author == "Arthur Conan Doyle";
+	int cnt = count_if(b.begin(), b.end(), [](Book& b) {
+		return b.author = "Agatha Christie" || b.author == "Arthur Conan Doyle";
 		});
 
+	cout << cnt;
 
-	std::sort(b.begin(), b.end(), [](const Book& b1, const Book& b2) {
+	sort(b.begin(), b.end(), [](Book& b1, Book& b2) {
 		return b1.genre < b2.genre;
 		});
 
-	std::list<Book> newList;
-	
-	std::copy_if(b.begin(), b.end(), std::back_inserter(newList), [](const Book& b) {
+	list<Book> newList;
+
+	auto itr = copy_if(b.begin(), b.end(), back_inserter(newList), [](Book& b) {
 		return (b.genre == BookGenre::Fiction || b.genre == BookGenre::Mystery) && b.price < 20;
 		});
 
-	auto itr = std::find_if(b.begin(), b.end(), [](const Book& b) {
+	auto sf = find_if(b.begin(), b.end(), [](const Book& b) {
 		return b.genre == BookGenre::ScienceFiction;
 		});
 
-	newList.push_front(*itr);
+	newList.push_front(*sf);
 
-	double itr = std::accumulate(newList.begin(), newList.end(), 0.0, [](double total, const Book& b) {
+	double totalPrice = accumulate(b.begin(), b.end(), 0.0, [](double total, const Book& b) {
 		return total + b.price;
 		});
 
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//std::list<Book> compileReadingList(std::vector<Book>& b)
+//{
+//	int cnt = std::count_if(b.begin(), b.end(), [](const Book& b) {
+//		return b.author == "Agatha Christie" || b.author == "Arthur Conan Doyle";
+//		});
+//
+//
+//	std::sort(b.begin(), b.end(), [](const Book& b1, const Book& b2) {
+//		return b1.genre < b2.genre;
+//		});
+//
+//	std::list<Book> newList;
+//	
+//	std::copy_if(b.begin(), b.end(), std::back_inserter(newList), [](const Book& b) {
+//		return (b.genre == BookGenre::Fiction || b.genre == BookGenre::Mystery) && b.price < 20;
+//		});
+//
+//	auto itr = std::find_if(b.begin(), b.end(), [](const Book& b) {
+//		return b.genre == BookGenre::ScienceFiction;
+//		});
+//
+//	newList.push_front(*itr);
+//
+//	double itr = std::accumulate(newList.begin(), newList.end(), 0.0, [](double total, const Book& b) {
+//		return total + b.price;
+//		});
+//
+//}
